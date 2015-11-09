@@ -1,0 +1,587 @@
+\begin{thebibliography}{85}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alfi(2009)]{CristelliPietroneroZaccaria2009}
+Cristelli M. Pietronero L. and Zaccaria~A. Alfi, V.
+\newblock { Mechanisms of self-organization and ﬁnite size effects in a
+  minimal agent based model.}
+\newblock \emph{J. Stat. Mech.}, P03016, 2009.
+
+\bibitem[Alfi et~al.(2009{\natexlab{a}})Alfi, Pietronero, and
+  Zaccaria]{AlfiPietroneroZaccaria2009I}
+V.~Alfi, L.~Pietronero, and A.~Zaccaria.
+\newblock {Minimal Agent Based Model For The Origin And Self-Organization Of
+  Stylized Facts In Financial Markets}.
+\newblock \emph{The European Physical Journal B}, 67\penalty0 (3):\penalty0
+  385--397, 2009{\natexlab{a}}.
+
+\bibitem[Alfi et~al.(2009{\natexlab{b}})Alfi, Pietronero, and
+  Zaccaria]{AlfiPietroneroZaccaria2009II}
+V.~Alfi, L.~Pietronero, and A~Zaccaria.
+\newblock { Minimal agent based model for ﬁnancial markets II: statistical
+  properties of the linear and multiplicative dynamics}.
+\newblock \emph{The European Physical Journal B}, 67\penalty0 (3):\penalty0
+  399--417, 2009{\natexlab{b}}.
+
+\bibitem[Allan(2009)]{Allan2009}
+Rob Allan.
+\newblock {Survey of Agent Based Modelling and Simulation Tools}.
+\newblock \emph{Engineering}, 501\penalty0 (October):\penalty0 57–72, 2009.
+\newblock URL \url{http://epubs.cclrc.ac.uk/work-details?w=50398}.
+
+\bibitem[Arndt et~al.(2011)Arndt, Gomber, Lutat, and Uhle]{arndt2011}
+Bj{\"o}rn Arndt, Peter Gomber, Marco Lutat, and Tim Uhle.
+\newblock {High Frequency Trading - A European Perspective}.
+\newblock \emph{HoF Quarterly 02/2011}, 2:\penalty0 9 --10, 2011.
+
+\bibitem[Arnuk and Saluzzi(2009)]{arnuk2009}
+Sal Arnuk and Joseph Saluzzi.
+\newblock {Latency Arbitrage: The Real Power Behind Predatory High Frequency
+  Trading}.
+\newblock Technical report, A Themis Trading LLC White Paper, December 2009.
+\newblock URL
+  \url{http://www.themistrading.com/article_files/0000/0519/THEMIS_TRADING_White_Paper_--_Latency_Arbitrage_-_December_4__2009.pdf}.
+
+\bibitem[Arthur(1994)]{Arthur1994}
+W.~B. Arthur.
+\newblock {Complexity in Economic Theory: Inductive Reasoning and bounded
+  Rationality}.
+\newblock \emph{The American Economic Review}, 84\penalty0 (2):\penalty0
+  406--411, May 1994.
+
+\bibitem[ASIC(2010)]{ASIC2010}
+ASIC.
+\newblock {Australian Securities and Investment Commission, Consul tation Paper
+  145, Australian equity market structure. Proposals }.
+\newblock Technical report, http://www.asic.gov.au, november 2010.
+
+\bibitem[Bianchi and Vagliasindi(2007)]{BianchiCirilloGallegatiVagliasindi2007}
+Cirillo P. Gallegati~M. Bianchi, C. and P.~A. Vagliasindi.
+\newblock {Validating and calibrating agent-based models: A case study}.
+\newblock \emph{Computational Economics}, 30:\penalty0 245--264, 2007.
+
+\bibitem[Bonnet et~al.(2005)Bonnet, Allison, and Abbott]{bonnet2005}
+Frédéric~D.R. Bonnet, Andrew Allison, and Derek Abbott.
+\newblock {Bubbles in a minority game setting with real financial data}.
+\newblock pages 60390C--60390C--5, 2005.
+\newblock URL \url{http://dx.doi.org/10.1117/12.673126}.
+
+\bibitem[Bouchaud and Potters(2004)]{BouchaudPotters2004}
+Jean-Philippe Bouchaud and Marc Potters.
+\newblock \emph{{Theory of Financial Risk and Derivative Pricing: From
+  Statistical Physics to Risk Management}}.
+\newblock Cambridge University Press, 2 edition, February 2004.
+
+\bibitem[Bouchaud et~al.(2002)Bouchaud, M{\'E}zard, and Potters]{Bouchaud2002}
+Jean-Philippe Bouchaud, Marc M{\'E}zard, and Marc Potters.
+\newblock {Statistical properties of stock order books: empirical results and
+  models}.
+\newblock \emph{Quantitative Finance}, 2\penalty0 (4):\penalty0 251--256, 2002.
+
+\bibitem[Brogaard(2011)]{brogaard2011}
+Jonathan~A. Brogaard.
+\newblock {High frequency trading, information, and profits}.
+\newblock Technical report, https://bis.gov.uk, March 2011.
+\newblock URL
+  \url{http://www.bis.gov.uk/assets/foresight/docs/computer-trading/11-1241-dr10-high-frequency-trading-information-and-profits.pdf}.
+
+\bibitem[Cartea and Penalva(2011)]{cartea2011}
+Álvaro Cartea and José Penalva.
+\newblock Where is the value in high frequency trading?
+\newblock Banco de EspaÃ±a Working Papers 1111, Banco de EspaÃ±a, 2011.
+\newblock URL \url{http://EconPapers.repec.org/RePEc:bde:wpaper:1111}.
+
+\bibitem[CESR(2010)]{CESR2010}
+CESR.
+\newblock {Committee of European Securities Regulators, Call for Evidence.
+  Microstructural issues of the European equity markets }.
+\newblock Technical report, http://www.cesr.eu, july 2010.
+\newblock URL \url{http://www.cesr.eu/data/document/10_142.pdf}.
+
+\bibitem[Chakraborti et~al.(2011{\natexlab{a}})Chakraborti, Toke, Patriarca,
+  and Abergel]{ChakrabortiTokePatriarcaAbergel2011II}
+Anirban Chakraborti, Ioane~M. Toke, Marco Patriarca, and Frederic Abergel.
+\newblock {Econophysics review: II. Agent-based models}.
+\newblock \emph{Quantitative Finance}, 11, June 2011{\natexlab{a}}.
+
+\bibitem[Chakraborti et~al.(2011{\natexlab{b}})Chakraborti, Toke, Patriarca,
+  and Abergel]{chak2011}
+Anirban Chakraborti, Ioane~M. Toke, Marco Patriarca, and Frederic Abergel.
+\newblock {Econophysics review: II. Agent-based models}.
+\newblock \emph{Quantitative Finance}, 11, June 2011{\natexlab{b}}.
+
+\bibitem[Challet et~al.(2001)Challet, Chessa, Marsili, and Zhang]{challet2001}
+D.~Challet, A.~Chessa, M.~Marsili, and Y-C. Zhang.
+\newblock From minority games to real markets.
+\newblock \emph{Quantitative Finance}, 1\penalty0 (1):\penalty0 168--176, 2001.
+
+\bibitem[Challet et~al.(2000)Challet, Marsili, and Zhang]{challet2000}
+Damien Challet, Matteo Marsili, and Yi-Cheng Zhang.
+\newblock {Modeling market mechanism with minority game}.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  276\penalty0 (1-2):\penalty0 284--315, February 2000.
+
+\bibitem[Chan(1988)]{chan1988}
+K.~C. Chan.
+\newblock {On the Contrarian Investment Strategy}.
+\newblock \emph{The Journal of Business}, 61\penalty0 (2):\penalty0 147--163,
+  1988.
+
+\bibitem[Chan et~al.(1996)Chan, Narasimhan, and Josef]{chan1996}
+Louis K.~C. Chan, Jegadeesh Narasimhan, and Lakonishok Josef.
+\newblock Momentum strategies.
+\newblock \emph{Journal of Finance}, pages 1681--1714, 1996.
+
+\bibitem[Chen and Yeh(2001)]{chen2001}
+Shu-Heng Chen and Chia-Hsuan Yeh.
+\newblock {Evolving traders and the business school with genetic programming: A
+  new architecture of the agent-based artificial stock market}.
+\newblock \emph{Journal of Economic Dynamics and Control}, 25\penalty0
+  (3-4):\penalty0 363--393, 2001.
+
+\bibitem[Chiarella and Iori(2002)]{chiarella2002}
+Carl Chiarella and Giulia Iori.
+\newblock {A simulation analysis of the microstructure of double auction
+  markets}.
+\newblock \emph{Quantitative Finance}, 2\penalty0 (5):\penalty0 346--353, 2002.
+
+\bibitem[Cont and Bouchaud(2000)]{ContBouchaud2000}
+R.~Cont and J.-P. Bouchaud.
+\newblock {Herd behaviour and aggregate fluctuations in financial markets}.
+\newblock \emph{Macroeconomic Dynamics}, 4:\penalty0 170--196, 2000.
+
+\bibitem[Cont and De~Larrard(2011)]{cont2011}
+R.~Cont and A.~De~Larrard.
+\newblock {Price dynamics in a Markovian limit order market}.
+\newblock \emph{ArXiv eprint arxiv:1104.4596}, 2011.
+
+\bibitem[Cont et~al.(2010)Cont, Stoikov, and Talreja]{cont2010}
+Rama Cont, Sasha Stoikov, and Rishi Talreja.
+\newblock {A Stochastic Model for Order Book Dynamics}.
+\newblock \emph{Oper. Res.}, 58\penalty0 (3):\penalty0 549--563, May 2010.
+
+\bibitem[Credit~Suisse(2012{\natexlab{a}})]{AES2012I}
+AES~Analysis Credit~Suisse.
+\newblock {High Frequency Trading- The Good, The Bad and The Regulation}.
+\newblock Technical report, https://credit-suisse.com, December
+  2012{\natexlab{a}}.
+\newblock URL \url{https://credit-suisse.com/edge}.
+
+\bibitem[Credit~Suisse(2012{\natexlab{b}})]{AES2012II}
+AES~Analysis Credit~Suisse.
+\newblock {High Frequency Trading – Measurement, Detection and Response}.
+\newblock Technical report, https://credit-suisse.com, December
+  2012{\natexlab{b}}.
+\newblock URL \url{https://credit-suisse.com/edge}.
+
+\bibitem[Cristelli et~al.(2011)Cristelli, Pietronero, and
+  Zaccaria]{CristelliPietroneroZaccaria2011}
+M.~Cristelli, L.~Pietronero, and A.~Zaccaria.
+\newblock {Critical Overview of Agent-Based Models for Economics}.
+\newblock Quantitative finance papers, arXiv.org, 2011.
+\newblock URL \url{http://EconPapers.repec.org/RePEc:arx:papers:1101.1847}.
+
+\bibitem[Cvitanic and Kirilenko(2010)]{cvitanic2010}
+Jaksa Cvitanic and Andrei Kirilenko.
+\newblock {High Frequency Traders and Asset Prices}.
+\newblock \emph{Social Science Research Network Working Paper Series}, March
+  2010.
+\newblock URL \url{http://ssrn.com/abstract=1569067}.
+
+\bibitem[Deissenberg et~al.(2008)Deissenberg, van~der Hoog, and
+  Dawid]{eurace2008}
+Christophe Deissenberg, Sander van~der Hoog, and Herbert Dawid.
+\newblock {EURACE: A massively parallel agent-based model of the European
+  economy}.
+\newblock \emph{Applied Mathematics and Computation}, 204\penalty0
+  (2):\penalty0 541--552, October 2008.
+\newblock ISSN 00963003.
+\newblock URL \url{http://dx.doi.org/10.1016/j.amc.2008.05.116}.
+
+\bibitem[Doyne~Farmer and Zamani(2007)]{FarmerZamani2007}
+J.~Doyne~Farmer and N.~Zamani.
+\newblock {Mechanical vs. informational components of price impact}.
+\newblock \emph{The European Physical Journal B}, 55:\penalty0 189--200, 2007.
+
+\bibitem[Egginton et~al.(2011)Egginton, Van~Ness, and Van~Ness]{egginton2011}
+Jared~F. Egginton, Bonnie~F. Van~Ness, and Robert~A. Van~Ness.
+\newblock {Quote Stuffing}.
+\newblock \emph{Social Science Research Network Working Paper Series}, November
+  2011.
+\newblock URL \url{http://ssrn.com/abstract=1958281}.
+
+\bibitem[European~Commission(2010)]{mifid2010}
+MiFID European~Commission.
+\newblock {European Commission Directorate General Internal Market and
+  Services, Public consultation: Review of the Markets in Financial Instruments
+  Directive (MiFID) }.
+\newblock Technical report, http://www.esma.europa.eu, 2010.
+\newblock URL
+  \url{http://ec.europa.eu/internal_market/consultations/docs/2010/mifid/consultation_paper_en.pdf}.
+
+\bibitem[Farmer and Skouras(2011)]{farmer2011}
+J.~D. Farmer and S.~Skouras.
+\newblock {An Ecological Perspective on the Future of Computer Trading}.
+\newblock Technical report, Technical Report Foresight Driver Review, DR 6,
+  Foresight, October 2011.
+
+\bibitem[Farmer and Foley(2009)]{farmer2009}
+J.~Doyne Farmer and Duncan Foley.
+\newblock {The economy needs agent-based modelling}.
+\newblock \emph{Nature}, 460\penalty0 (7256):\penalty0 685--686, August 2009.
+
+\bibitem[Farmer et~al.(2004)Farmer, Gillemot, Lillo, Mike, and Sen]{Farmer2004}
+J.~Doyne Farmer, L{\'A}szl{\'O} Gillemot, Fabrizio Lillo, Szabolcs Mike, and
+  Anindya Sen.
+\newblock {What really causes large price changes?}
+\newblock \emph{Quantitative Finance}, 4\penalty0 (4):\penalty0 383--397, 2004.
+\newblock ISSN 1469-7688.
+
+\bibitem[Farmer et~al.(2005)Farmer, Patelli, and Zovko]{farmer2005}
+J.~Doyne Farmer, Paolo Patelli, and Ilija~I. Zovko.
+\newblock {The predictive power of zero intelligence in financial markets}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 102\penalty0 (6):\penalty0 2254--2259, February 2005.
+
+\bibitem[Feng et~al.(2012)Feng, Li, Podobnik, Preis, and
+  Stanley]{FengLiPodobnikPreisStanley2012}
+Ling Feng, Baowen Li, Boris Podobnik, Tobias Preis, and H~Eugene Stanley.
+\newblock Linking agent-based models and stochastic models of financial
+  markets.
+\newblock Technical report, Proc Natl Acad Sci U S A, 2012.
+\newblock URL
+  \url{http://www.biomedsearch.com/nih/Linking-agent-based-models-stochastic/22586086.html}.
+
+\bibitem[Gomber et~al.(2011)Gomber, Arndt, Lutat, and Uhle]{gomer2011}
+Peter Gomber, Björn Arndt, Marco Lutat, and Tim Uhle.
+\newblock {High-Frequency Trading}.
+\newblock Technical report, http://www.frankfurt-main-finance.de, December
+  2011.
+\newblock URL
+  \url{http://www.frankfurt-main-finance.de/fileadmin/data_archive/de/finanzplatz/daten-studien/studien/High-Frequency-Trading.pdf}.
+
+\bibitem[Gou(2005)]{gou2005}
+Chengling Gou.
+\newblock {Predictability of Shanghai Stock Market by Agent-based Mix-game
+  Model}.
+\newblock In \emph{Neural Networks and Brain, 2005. ICNN B '05. International
+  Conference on}, volume~3, pages 1651--1655, 2005.
+
+\bibitem[Grazzini(2011)]{Grazzini2011}
+J~Grazzini.
+\newblock {Estimating micromotives from macrobehavior}.
+\newblock {http://www.de.unito.it/web/member/segreteria/WP/2011}, 2011.
+
+\bibitem[Grossman and Merton(1988)]{grossman1988}
+Sanford~J. Grossman and H.~Miller Merton.
+\newblock {Liquidity and Market Structure}.
+\newblock \emph{The Journal of Finance}, 43\penalty0 (3):\penalty0 617--633,
+  1988.
+
+\bibitem[Grossman and Stiglitz(1976)]{grossman1976}
+Sanford~J. Grossman and Joseph~E. Stiglitz.
+\newblock {Information and Competitive Price Systems}.
+\newblock \emph{The American Economic Review}, 66\penalty0 (2):\penalty0
+  246--253, 1976.
+
+\bibitem[Guo(2005)]{guo2005}
+T.X. Guo.
+\newblock \emph{{An Agent-based Simulation of Double-auction Markets}}.
+\newblock Canadian theses. Thesis (M.Sc.)--University of Toronto, 2005.
+\newblock ISBN 9780494021668.
+\newblock URL \url{http://books.google.ru/books?id=l\_h8twAACAAJ}.
+
+\bibitem[Harras and Sornette(2011)]{harras2011}
+Georges Harras and Didier Sornette.
+\newblock {How to grow a bubble: A model of myopic adapting agents}.
+\newblock \emph{Journal of Economic Behavior \& Organization}, 80\penalty0
+  (1):\penalty0 137 -- 152, 2011.
+
+\bibitem[Hasbrouck(2012)]{hasbrouck2012}
+Joel Hasbrouck.
+\newblock {High Frequency Quoting}.
+\newblock In \emph{Market Microstructure: confronting many viewpoints},
+  December 2012.
+
+\bibitem[Hasbrouck and Saar(2010)]{hasbrouck2010}
+Joel Hasbrouck and Gideon Saar.
+\newblock {Low-Latency Trading}.
+\newblock Technical report, Working Paper, October 2010.
+\newblock URL
+  \url{http://pages.stern.nyu.edu/~jhasbrou/Research/Working%20Papers/HS10-11-10.pdf}.
+
+\bibitem[Huang and Solomon(2001)]{huang2001}
+Z.F. Huang and S.~Solomon.
+\newblock {Power, Lévy, exponential and Gaussian-like regimes in autocatalytic
+  financial systems}.
+\newblock \emph{The European Physical Journal B - Condensed Matter and Complex
+  Systems}, 20:\penalty0 601--607, 2001.
+
+\bibitem[Jarrow and Protter(2012)]{jarrow2012}
+Robert~A Jarrow and Philip Protter.
+\newblock {A Dysfunctional Role of High Frequecy Trading in Electronic
+  Markets}.
+\newblock \emph{International Journal of Theoretical and Applied Finance
+  (IJTAF)}, 15\penalty0 (03), 2012.
+
+\bibitem[Kearns et~al.(2010)Kearns, Kulesza, and Nevmyvaka]{kearns2010}
+Michael Kearns, Alex Kulesza, and Yuriy Nevmyvaka.
+\newblock {Empirical Limitations on High Frequency Trading Profitability}.
+\newblock Technical report, arXiv.org, 2010.
+\newblock URL \url{http://EconPapers.repec.org/RePEc:arx:papers:1007.2593}.
+
+\bibitem[Kim and Markowitz(1989)]{markowitz1989}
+G.~Kim and H.~Markowitz.
+\newblock {Investment Rules, Margin, And Market Volatility}.
+\newblock \emph{Journal of Portfolio Management}, 16\penalty0 (1):\penalty0
+  45--52, 1989.
+
+\bibitem[Kirilenko et~al.(2010)Kirilenko, Kyle, Samadi, and
+  Tuzun]{kirilenko2010}
+Andrei~A. Kirilenko, Albert~P. Kyle, Mehrdad Samadi, and Tugkan Tuzun.
+\newblock {The Flash Crash: The Impact of High Frequency Trading on an
+  Electronic Market}.
+\newblock \emph{Social Science Research Network Working Paper Series}, October
+  2010.
+\newblock URL \url{http://ssrn.com/abstract=1686004}.
+
+\bibitem[Kirilenko et~al.(2011)Kirilenko, Yang, Paddrik, Haynes, Todd, Beling,
+  and Scherer]{KirilenkoYangPaddrikHaynesToddBelingScherer2011}
+Andrei~A. Kirilenko, Steve~Y. Yang, Mark~E. Paddrik, Roy~J. Haynes, A.~Todd,
+  Peter Beling, and William Scherer.
+\newblock {Behavior Based Learning in Identifying High Frequency Trading
+  Strategies}.
+\newblock Technical report, November 2011.
+\newblock URL
+  \url{http://papers.ssrn.com/sol3/papers.cfm?abstract\_id=1955965}.
+
+\bibitem[Kirilenko(2010)]{KirilenkoKyleSamadiTuzun2010}
+Kyle Albert P. Samadi Mehrdad Tuzun~Tugkan Kirilenko, Andrei~A.
+\newblock {The Flash Crash: The Impact of High Frequency Trading on an
+  Electronic Market}.
+\newblock Technical report, October 2010.
+\newblock URL \url{http://ssrn.com/abstract=1686004}.
+
+\bibitem[LeBaron(2002)]{LeBaron2002}
+B.~LeBaron.
+\newblock {Building the Santa Fe Artificial Stock Market}.
+\newblock \emph{Physica A}, 2002.
+\newblock Working Paper, Brandeis University.
+
+\bibitem[LeBaron(2006)]{lebaron2006}
+Blake LeBaron.
+\newblock {Agent-based Computational Finance}.
+\newblock In Leigh Tesfatsion and Kenneth~L. Judd, editors, \emph{Handbook of
+  Computational Economics}, volume~2 of \emph{Handbook of Computational
+  Economics}, chapter~24, pages 1187--1233. Elsevier, 00 2006.
+
+\bibitem[Leombruni and Richiardi(2005)]{LeombruniRichiardi2005}
+R.~Leombruni and M.~Richiardi.
+\newblock {Why are economists sceptical about agent-based simulations?}
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  355\penalty0 (1):\penalty0 103--109, September 2005.
+
+\bibitem[Levy et~al.(1994)Levy, Levy, and Solomon]{levy1994}
+Moshe Levy, Haim Levy, and Sorin Solomon.
+\newblock {A microscopic model of the stock market: Cycles, booms, and
+  crashes}.
+\newblock \emph{Economics Letters}, 45\penalty0 (1):\penalty0 103--111, 1994.
+
+\bibitem[Lillo et~al.(2008)Lillo, Moro, Vaglica, and
+  Mantegna]{LilloMoroVaglicaMantegna2008}
+F.~Lillo, E.~Moro, G.~Vaglica, and R.N. Mantegna.
+\newblock { Specialization and herding behavior of trading firms in a financial
+  market}.
+\newblock \emph{New Journal of Physics}, 10:\penalty0 043019, 2008.
+
+\bibitem[Lu(2012)]{lu2012}
+Cheng Lu.
+\newblock High frequency trading: Price dynamics models and market making
+  strategies.
+\newblock Master's thesis, EECS Department, University of California, Berkeley,
+  May 2012.
+\newblock URL
+  \url{http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-144.html}.
+
+\bibitem[Lux and Marchesi(1999)]{LuxMarchesi1999}
+T.~Lux and M.~Marchesi.
+\newblock {Scaling and criticality in a stochastic multi-agent model of a
+  financial market}.
+\newblock \emph{Nature}, 397:\penalty0 498--500, 1999.
+
+\bibitem[Macal and North(2010)]{macal2010}
+C.M. Macal and M.J. North.
+\newblock {Tutorial on agent-based modelling and simulation}.
+\newblock \emph{Journal of Simulation}, \penalty0 (4):\penalty0 151--162, 2010.
+
+\bibitem[Malcai et~al.(2002)Malcai, Biham, Richmond, and Solomon]{solomon2002}
+Ofer Malcai, Ofer Biham, Peter Richmond, and Sorin Solomon.
+\newblock {Theoretical Analysis and Simulations of the Generalized
+  Lotka-Volterra Model}.
+\newblock Papers, arXiv.org, 2002.
+\newblock URL
+  \url{http://EconPapers.repec.org/RePEc:arx:papers:cond-mat/0208514}.
+
+\bibitem[Mankad et~al.(2011)Mankad, Michailidis, and
+  Kirilenko]{ShawnMichailidiszKirilenko2011}
+Shawn Mankad, George Michailidis, and Andrei Kirilenko.
+\newblock {Discovering the Ecosystem of an Electronic Financial Market with a
+  Dynamic Machine-Learning Method}.
+\newblock Technical report, May 2011.
+\newblock URL
+  \url{{http://papers.ssrn.com/sol3/papers.cfm?abstract\_id=1787556}}.
+
+\bibitem[Mike and Farmer(2008)]{mike2008}
+Szabolcs Mike and J.~Doyne Farmer.
+\newblock {An empirical behavioral model of liquidity and volatility}.
+\newblock \emph{Journal of Economic Dynamics and Control}, 32\penalty0
+  (1):\penalty0 200--234, 2008.
+
+\bibitem[Moro et~al.(2009)Moro, Vicente, Moyano, Gerig, Farmer, Lillo, and
+  Mantegna]{MoroVicenteMoyanoGerigFarmerLilloMantegna2009}
+E.~Moro, J.~Vicente, L.G. Moyano, A.~Gerig, J.D. Farmer, F.~Lillo, and R.N.
+  Mantegna.
+\newblock {Market impact and trading profile of hidden orders in stock
+  markets}.
+\newblock \emph{Phys. Rev. E}, 80:\penalty0 066102, 2009.
+
+\bibitem[Nanex(2010)]{NANEX2010}
+Nanex.
+\newblock {Analysis of the "Flash Crash"}.
+\newblock Technical report, http://www.nanex.net/, july 2010.
+\newblock URL
+  \url{http://www.nanex.net/20100506/flashcrashanalysis_part4-1.html}.
+
+\bibitem[Paddrik et~al.(2012)Paddrik, Hayes, Todd, Yang, Beling, and
+  Scherer]{paddrik2012}
+M.~Paddrik, R.~Hayes, A.~Todd, S.~Yang, P.~Beling, and W.~Scherer.
+\newblock {An agent based model of the E-Mini S amp;P 500 applied to flash
+  crash analysis}.
+\newblock In \emph{Computational Intelligence for Financial Engineering
+  Economics (CIFEr), 2012 IEEE Conference on}, pages 1--8, March 2012.
+
+\bibitem[Palmer et~al.(1994)Palmer, Arthur, Holland, LeBaron, and
+  Tayler]{PalmerArthurHollandLeBaronTayler1994}
+R.~G. Palmer, W.~B. Arthur, J.~H. Holland, B.~LeBaron, and P.~Tayler.
+\newblock {Artificial economic life: a simple model of a stock market}.
+\newblock \emph{Physica D}, 75:\penalty0 264--274, 1994.
+
+\bibitem[Panayi et~al.(2012)Panayi, Harman, and Wetherilt]{panayi2012}
+Efstathios Panayi, Mark Harman, and Anne Wetherilt.
+\newblock {Agent-based modelling of stock markets using existing order book
+  data}.
+\newblock In \emph{Multi-Agent-Based Simulation XIII, International Workshop,
+  MABS 2012, Valencia, Spain}, Lecture Notes in Computer Science. Springer,
+  2012.
+
+\bibitem[Pereira et~al.(2009)Pereira, Mauri, and Tettamanzi]{Pereira2009}
+C{\'e}lia da~Costa Pereira, Alessia Mauri, and Andrea G.~B. Tettamanzi.
+\newblock Cognitive-agent-based modeling of a financial market.
+\newblock In \emph{Proceedings of the 2009 IEEE/WIC/ACM International Joint
+  Conference on Web Intelligence and Intelligent Agent Technology - Volume 02},
+  WI-IAT '09, pages 20--27. IEEE Computer Society, 2009.
+\newblock ISBN 978-0-7695-3801-3.
+
+\bibitem[Ren and Zhou(2011)]{RenZhou2011}
+Fei Ren and Wei-Xing Zhou.
+\newblock {Analysis of trade packages in Chinese stock market}.
+\newblock Quantitative finance papers, arXiv.org, 2011.
+\newblock URL \url{http://EconPapers.repec.org/RePEc:arx:papers:1103.1526}.
+
+\bibitem[Samanidou et~al.(2007)Samanidou, Zschischang, Stauffer, and
+  Lux]{samanidou2007}
+E~Samanidou, E~Zschischang, D~Stauffer, and T~Lux.
+\newblock {Agent-based models of financial markets}.
+\newblock \emph{Reports on Progress in Physics}, 70\penalty0 (3):\penalty0 409,
+  2007.
+
+\bibitem[Scalas et~al.(2006)Scalas, Kaizoji, Kirchler, Huber, and
+  Tedeschi]{scalas2006}
+Enrico Scalas, Taisei Kaizoji, Michael Kirchler, Jürgen Huber, and Alessandra
+  Tedeschi.
+\newblock Waiting times between orders and trades in double-auction markets.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  366\penalty0 (C):\penalty0 463--471, 2006.
+
+\bibitem[SEC(2010)]{SEC2010}
+SEC.
+\newblock {Securities and Exchange Commission, Concept Release on Equity Market
+  Structure}.
+\newblock Technical report, http://www.sec.gov, april 2010.
+\newblock URL \url{http://www.sec.gov/rules/concept/2010/34-61358}.
+
+\bibitem[Smith et~al.(2003)Smith, Farmer, Gillemot, and
+  Krishnamurthy]{SmithFarmerGillemotKrishnamurty2003}
+Eric Smith, J.~Doyne Farmer, L{\'A}szl{\'O} Gillemot, and Supriya
+  Krishnamurthy.
+\newblock {Statistical theory of the continuous double auction}.
+\newblock \emph{Quantitative Finance}, 3\penalty0 (6):\penalty0 481--514, 2003.
+
+\bibitem[Stanley(1999)]{Stanley1999}
+H.~E. Stanley.
+\newblock {Econophysics: can physicists contribute to the science of
+  economics?}
+\newblock \emph{Computing in Science and Engg.}, 1\penalty0 (1):\penalty0
+  74--77, January 1999.
+\newblock ISSN 1521-9615.
+
+\bibitem[Toth et~al.(2012)Toth, Eisler, Lillo, Kockelkoren, Bouchaud, and
+  Farmer]{TothEislerLilloKockelkorenBouchaudFarmer2012}
+Bence Toth, Zoltan Eisler, Fabrizio Lillo, Julien Kockelkoren, Jean-Philippe
+  Bouchaud, and J.~Doyne Farmer.
+\newblock {How does the market react to your order flow?}
+\newblock Technical report, arXiv.org, 2012.
+\newblock URL \url{{http://EconPapers.repec.org/RePEc:arx:papers:1104.0587}}.
+
+\bibitem[Tóth et~al.(2010)Tóth, Lillo, and Farmer]{TóthLilloFarmer2010}
+B.~Tóth, F.~Lillo, and J.~D. Farmer.
+\newblock {Segmentation algorithm for non-stationary compound Poisson
+  processes}.
+\newblock \emph{The European Physical Journal B - Condensed Matter and Complex
+  Systems}, 78\penalty0 (2):\penalty0 235--243, 2010.
+
+\bibitem[Tóth et~al.(2012)Tóth, Eisler, Lillo, Kockelkoren, Bouchaud, and
+  Farmer]{TóthEislerLilloKockelkorenBouchaudFarmer2012}
+Bence Tóth, Zoltan Eisler, Fabrizio Lillo, Julien Kockelkoren, Jean-Philippe
+  Bouchaud, and J.~Doyne Farmer.
+\newblock {How does the market react to your order flow?}
+\newblock Technical report, arXiv.org, 2012.
+\newblock URL \url{{http://EconPapers.repec.org/RePEc:arx:papers:1104.0587}}.
+
+\bibitem[Tumminello et~al.(2012)Tumminello, Lillo, Piilo, and
+  Mantegna]{TumminelloLilloPiiloMantegna2012}
+Michele Tumminello, Fabrizio Lillo, Jyrki Piilo, and Rosario~N Mantegna.
+\newblock {Identification of clusters of investors from their real trading
+  activity in a financial market}.
+\newblock \emph{New Journal of Physics}, 14\penalty0 (1):\penalty0 13--41,
+  2012.
+
+\bibitem[Vaglica et~al.(2008)Vaglica, Lillo, Moro, and
+  Mantegna]{VaglicaLilloMoroMantegna2008}
+G.~Vaglica, F.~Lillo, E.~Moro, and R.N. Mantegna.
+\newblock {Scaling laws of strategic behavior and size heterogeneity in agent
+  dynamics}.
+\newblock \emph{Phys. Rev. E}, 77:\penalty0 036110, 2008.
+
+\bibitem[Vytelingum et~al.(2007)Vytelingum, Cliff, and
+  Jennings]{Vytelingum2006}
+Perukrishnen Vytelingum, Dave Cliff, and Nicholas~R. Jennings.
+\newblock Evolutionary stability of behavioural types in the continuous double
+  auction.
+\newblock In \emph{Proceedings of the 2006 AAMAS workshop and TADA/AMEC 2006
+  conference on Agent-mediated electronic commerce: automated negotiation and
+  strategy design for electronic markets}, pages 103--117. Springer-Verlag,
+  2007.
+
+\bibitem[Wiesinger et~al.(2013)Wiesinger, Sornette, and
+  Satinover]{wiesinger2013}
+J.~Wiesinger, D.~Sornette, and J.~Satinover.
+\newblock Reverse engineering financial markets with majority and minority
+  games using genetic algorithms.
+\newblock \emph{Computational Economics}, 41:\penalty0 475–492, 2013.
+
+\end{thebibliography}

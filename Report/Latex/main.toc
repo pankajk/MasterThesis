@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}High Frequency Trading}{4}{section.2}
+\contentsline {section}{\numberline {3}Agent Based Model}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Econophysics models}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Minority game models}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Model driven}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Evolutionary models}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Empirically grounded}{7}{subsection.3.5}
+\contentsline {section}{\numberline {4}Agent Ecology}{8}{section.4}
+\contentsline {section}{\numberline {5}Trading Strategies}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Electronic Liquidity Provision}{10}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Market Making}{11}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Rebate Trading}{11}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2} Statistical Arbitrage}{12}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Liquidity Detection}{12}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Market Manipulative}{13}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Quote Stuffing}{13}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Layering}{13}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Order Book Fade}{14}{subsubsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.4}Momentum ignition}{15}{subsubsection.5.4.4}
+\contentsline {section}{\numberline {6}Continuous Double Auction}{15}{section.6}
+\contentsline {subsection}{\numberline {6.1}Heterogeneous Agents}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Statistical Model}{17}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Evolutionary Game Theory}{18}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Queuing Theory}{18}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Real Models Implementation}{18}{subsection.6.5}
+\contentsline {section}{\numberline {7}Architecture}{19}{section.7}
+\contentsline {subsection}{\numberline {7.1}Santa Fe Institute}{19}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}EURACE's FLAME}{20}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Client/Server Multi-threaded}{20}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Others}{22}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusions}{23}{section.8}
