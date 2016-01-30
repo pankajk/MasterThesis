@@ -41,18 +41,18 @@ g<- g1 + geom_line(aes(y=close), colour="red")
 g<- g + geom_line(aes(y=sim_index), colour="green")
 g
 
-par(mar = c(4,4,2,4))
+par(mar = c(5,5,2,5))
 
 with(DF, plot(time, log_close, type="l", col="red3", 
-             ylab="Price",
-             ylim=c(0,5)))
+             ylab="log (Price)",
+             ylim=c(0,3)))
 
 par(new = T)
 with(DF, plot(time, sim_index, type="l", col= "blue", ylim=c(0, 0.1),axes=F, xlab=NA, ylab=NA, cex=1.2))
 axis(side = 4)
 mtext(side = 4, line = 3, 'Similarity Index')
 legend("topleft",
-       legend=c("Price (USD)", "Similarity Metric"),
+       legend=c("Log Price (USD)", "Similarity Metric"),
        lty=c(2,1), col=c("red3", "blue"))
 
 
