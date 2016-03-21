@@ -1,0 +1,333 @@
+﻿@inproceedings{Francesco2015,
+  author    = {Francesco Orsini and
+               Paolo Frasconi and
+               Luc De Raedt},
+  title     = {Graph Invariant Kernels},
+  booktitle = {Proceedings of the Twenty-Fourth International Joint Conference on
+               Artificial Intelligence, {IJCAI} 2015, Buenos Aires, Argentina, July
+               25-31, 2015},
+  pages     = {3756--3762},
+  publisher = {{AAAI} Press},
+  year      = {2015},
+  url       = {http://ijcai.org/papers15/Abstracts/IJCAI15-528.html}
+  
+}
+
+@article{Neumann2015,
+author={Neumann, Marion
+and Garnett, Roman
+and Bauckhage, Christian
+and Kersting, Kristian},
+title={Propagation kernels: efficient graph kernels from propagated information},
+journal={Machine Learning},
+year={2015},
+volume={102},
+number={2},
+pages={209--245}
+
+}
+
+@inproceedings{Sugiyama2015,
+title = {Halting in Random Walk Kernels},
+author = {Sugiyama, Mahito and Borgwardt, Karsten},
+booktitle = {Advances in Neural Information Processing Systems 28},
+pages = {1630--1638},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5688-halting-in-random-walk-kernels.pdf}
+}
+
+@inproceedings{Mahe2004,
+ author = {Mah{\'e}, Pierre and Ueda, Nobuhisa and Akutsu, Tatsuya and Perret, Jean-Luc and Vert, Jean-Philippe},
+ title = {Extensions of Marginalized Graph Kernels},
+ booktitle = {Proceedings of the Twenty-first International Conference on Machine Learning},
+ series = {ICML '04},
+ year = {2004},
+ pages = {70--},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+} 
+
+@article{Kang2012,
+  author    = {U. Kang and Hanghang Tong and Jimeng Sun},
+  title     = {Fast Random Walk Graph Kernel},
+  booktitle = {SDM},
+  year      = {2012}
+}
+
+@incollection{Vishwanathan2007,
+  address = {Cambridge, MA},
+  author = {Vishwanathan, S V N and Borgwardt, Karsten M. and Schraudolph, Nicol},
+  booktitle = {Advances in Neural Information Processing Systems 19},
+  publisher = {MIT Press},
+  title = {Fast Computation of Graph Kernels},
+  year = {2007}
+}
+
+
+
+@inproceedings{Kashima2003,
+    author = {Hisashi Kashima and Koji Tsuda and Akihiro Inokuchi},
+    title = {Marginalized kernels between labeled graphs},
+    booktitle = {Proceedings of the Twentieth International Conference on Machine Learning},
+    year = {2003},
+    pages = {321--328},
+    publisher = {AAAI Press}
+}
+
+@article{Aziz2013, 
+ author={Aziz, F. and Wilson, R.C. and Hancock, E.R.}, 
+ journal={Neural Networks and Learning Systems, IEEE Transactions on}, 
+ title={Backtrackless Walks on a Graph}, 
+ year={2013}, 
+ volume={24}, 
+ number={6}, 
+ pages={977-989}, 
+ month={June}
+}
+
+@techreport{Haussler1999,
+  address = {Santa Cruz, CA, USA},
+  author = {Haussler, David},
+  institution = {University of California at Santa Cruz},
+  number = {UCS-CRL-99-10},
+  title = {Convolution Kernels on Discrete Structures},
+  type = {Technical Report},
+  url = {http://citeseer.ist.psu.edu/haussler99convolution.html},
+  year = {1999}
+}
+
+
+@inproceedings{Melnik2002,
+ author = {Melnik, Sergey and Garcia-Molina, Hector and Rahm, Erhard},
+ title = {Similarity Flooding: A Versatile Graph Matching Algorithm and Its Application to Schema Matching},
+ booktitle = {Proceedings of the 18th International Conference on Data Engineering},
+ series = {ICDE '02},
+ year = {2002},
+ pages = {117--},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA}
+ 
+} 
+
+﻿@article{Li2012,
+ author = {Li, Geng and Semerci, Murat and Yener,B{\"u}lent and Zaki, Mohammed J.},
+ title = {Effective Graph Classification Based on Topological and Label Attributes},
+ journal = {Stat. Anal. Data Min.},
+ volume = {5},
+ number = {4},
+ month = aug,
+ year = {2012},
+ pages = {265--283}
+ 
+} 
+
+@article{Koutra2013,
+  author    = {Danai Koutra and
+               Joshua T. Vogelstein and
+               Christos Faloutsos},
+  title     = {{DELTACON:} {A} Principled Massive-Graph Similarity Function},
+  journal   = {CoRR},
+  volume    = {abs/1304.4657},
+  year      = {2015}
+  
+}
+
+@inproceedings{Lee2015,
+  author    = {Jaekoo Lee and Gunn Kim and Sungroh Yoon},
+  title     = {Measuring Large-Scale Dynamic Graph Similarity by RICom: {RWR} with Intergraph Compression},
+  booktitle = {2015 {IEEE} International Conference on Data Mining, {ICDM} 2015, Atlantic City, NJ, USA, November 14-17, 2015},
+  pages     = {829--834},
+  year      = {2015}
+ 
+}
+@INPROCEEDINGS{Mheich2015, 
+ author={Mheich, A. and Hassan, M. and Gripon, V. and Khalil, M. and Berrou, C. and Dufor, O. and Wendling, F.}, 
+ booktitle={Neural Engineering (NER), 2015 7th International IEEE/EMBS Conference on}, 
+ title={A novel algorithm for measuring graph similarity: Application to brain networks}, 
+ year={2015}, 
+ pages={1068-1071}, 
+ month={April}
+
+}
+
+@article{Babai2015,
+  author    = {L{\'{a}}szl{\'{o}} Babai},
+  title     = {Graph Isomorphism in Quasipolynomial Time},
+  journal   = {CoRR},
+  volume    = {abs/1512.03547},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03547}
+  
+}
+
+@INPROCEEDINGS{Borgwardt2005, 
+ author={Borgwardt, K.M. and Kriegel, H.-P.}, 
+ booktitle={Data Mining, Fifth IEEE International Conference on}, 
+ title={Shortest-path kernels on graphs}, 
+ year={2005}, 
+ pages={8 pp.-}, 
+ month={Nov}
+
+}
+
+@article{Klambauer2015,
+  author = {Klambauer, Günter and Wischenbart, Martin and Mahr, Michael and Unterthiner, Thomas and Mayr, Andreas and Hochreiter, Sepp}, 
+  title = {Rchemcpp: a web service for structural analoging in ChEMBL, Drugbank and the Connectivity Map},
+  volume = {31}, 
+  number = {20}, 
+  pages = {3392-3394}, 
+  year = {2015}, 
+  journal = {Bioinformatics} 
+}
+
+@Inbook{Gartner2003,
+  author={G{\"a}rtner, Thomas and Flach, Peter and Wrobel, Stefan},
+  editor={Sch{\"o}lkopf, Bernhard and Warmuth, Manfred K.},
+  chapter={On Graph Kernels: Hardness Results and Efficient Alternatives},
+  title={Learning Theory and Kernel Machines: 16th Annual Conference on Learning Theory and 7th Kernel Workshop, COLT/Kernel 2003, Washington, DC, USA, August 24-27, 2003. Proceedings},
+  year={2003},
+  publisher={Springer Berlin Heidelberg},
+  address={Berlin, Heidelberg},
+  pages={129--143}
+
+}
+
+
+@article{Vishwanathan2010,
+ author = {Vishwanathan, S. V. N. and Schraudolph, Nicol N. and Kondor, Risi and Borgwardt, Karsten M.},
+ title = {Graph Kernels},
+ journal = {J. Mach. Learn. Res.},
+ volume = {11},
+ month = aug,
+ year = {2010},
+ pages = {1201--1242}
+} 
+
+@article{Deshpande2005,
+ author = {Deshpande, Mukund and Kuramochi, Michihiro and Wale, Nikil and Karypis, George},
+ title = {Frequent Substructure-Based Approaches for Classifying Chemical Compounds},
+ journal = {IEEE Trans. on Knowl. and Data Eng.},
+ volume = {17},
+ number = {8},
+ month = aug,
+ year = {2005},
+ pages = {1036--1050}
+} 
+
+@inproceedings{Ron2013,
+  author = {Ron, Dorit and Shamir, Adi},
+  booktitle = {Financial Cryptography},
+  editor = {Sadeghi, Ahmad-Reza},
+  pages = {6-24},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  title = {Quantitative Analysis of the Full Bitcoin Transaction Graph.},
+  volume = {7859},
+  year = {2013}
+}
+
+
+@inproceedings{Yanardag2015,
+ author = {Yanardag, Pinar and Vishwanathan, S.V.N.},
+ title = {Deep Graph Kernels},
+ booktitle = {Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD '15},
+ year = {2015},
+ pages = {1365--1374},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ 
+} 
+
+@article{Zager2008,
+ title = {Graph similarity scoring and matching},
+ author = {Zager, Laura A.  and Verghes, George C. },
+ journal = {Applied Mathematics Letters},
+ volume = {21},
+ number = {1},
+ pages = {86 - 94},
+ year = {2008}
+
+}
+
+@article{Kristoufek2015,
+  author = {Kristoufek, Ladislav},
+  journal = {PLoS ONE},
+  publisher = {Public Library of Science},
+  title = {What Are the Main Drivers of the Bitcoin Price? Evidence from Wavelet Coherence Analysis},
+  year = {2015},
+  month = {04},
+  volume = {10},
+  number = {4}
+}        
+
+
+@TECHREPORT{Lo2014,
+  title = {Bitcoin as money?},
+  author = {Lo, Stephanie and Wang, J. Christina},
+  year = {2014},
+  institution = {Federal Reserve Bank of Boston},
+  type = {Current Policy Perspectives},
+  number = {14-4}
+
+}
+
+
+@article{Fleder2015,
+  author    = {Michael Fleder and
+               Michael S. Kester and
+               Sudeep Pillai},
+  title     = {Bitcoin Transaction Graph Analysis},
+  journal   = {CoRR},
+  volume    = {abs/1502.01657},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.01657},
+  
+}
+
+
+@MastersThesis{Spagnuolo2013,
+    author    =     {Spagnuolo, Michele},
+    title     =     {{Bitiodine: Extracting intelligence from the bitcoin network}},
+    school    =     {Politecnico di Milano},
+    address   =     {Italy},
+    year      =     {2013}
+    
+}
+
+
+@article{Johannes2015,
+  author    = {G{\"{o}}bel, Johannes  and Keeler, H. Paul  and Krzesinski, Anthony E.  and Taylor, Peter G.},
+  title     = {Bitcoin Blockchain Dynamics: the Selfish-Mine Strategy in the Presence of Propagation Delay},
+  journal   = {CoRR},
+  volume    = {abs/1505.05343},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1505.05343}
+  
+}
+
+@article{ Kondor2014,
+  author={Kondor, D{\'{a}}niel  and Csabai, Istv{\'{a}}n  and Sz{\"{u}}le, J{\'{a}}nos  and P{\'{o}}sfai, M{\'{a}}rton  and Vattay,  G{\'{a}}bor },
+  title={Inferring the interplay between network structure and market effects in Bitcoin},
+  journal={New Journal of Physics},
+  volume={16},
+  number={12},
+  pages={125003},
+  year={2014}
+  
+}
+
+@article{Nakamoto2009,
+  author = {Nakamoto, Satoshi},
+  title = {Bitcoin: A Peer-to-Peer Electronic Cash System},
+  month = {May},
+  url = {http://www.bitcoin.org/bitcoin.pdf},
+  year = {2009}
+}
+	
+
+
+
+
+

@@ -1,129 +1,50 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
 The style file: plainnat.bst
-Database file #1: ref.bib
-Repeated entry---line 423 of file ref.bib
- : @article{chiarella2002
- :                       ,
-I'm skipping whatever remains of this entry
-Warning--string name "http://www.asic.gov.au/asic/pdflib.nsf/lookupbyfilename/cp-145.pdf/$file/cp-145.pdf" is undefined
---line 556 of file ref.bib
-Warning--I'm ignoring LeBaron2002's extra "title" field
---line 825 of file ref.bib
-Repeated entry---line 1060 of file ref.bib
- : @techreport{Grazzini2011
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1141 of file ref.bib
- : @techreport{Lebaron2002
- :                        ,
-I'm skipping whatever remains of this entry
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1347 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Alfi, V., Cristelli, M., Pietronero, L.,and Zaccaria, A." for entry CristelliPietroneroZaccaria2009
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Bianchi, C., Cirillo, P., Gallegati, M. and Vagliasindi, P. A." for entry BianchiCirilloGallegatiVagliasindi2007
-while executing---line 1429 of file plainnat.bst
-Warning--empty journal in bonnet2005
-Warning--empty institution in KirilenkoYangPaddrikHaynesToddBelingScherer2011
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Too many commas in name 1 of "Kirilenko, Andrei A., Kyle, Albert P.,Samadi, Mehrdad, Tuzun, Tugkan" for entry KirilenkoKyleSamadiTuzun2010
-while executing---line 1429 of file plainnat.bst
-Warning--empty institution in KirilenkoKyleSamadiTuzun2010
-Warning--there's a number but no volume in macal2010
-Warning--empty institution in ShawnMichailidiszKirilenko2011
-(There were 55 error messages)
+Database file #1: ./reference/ref.bib
+Warning--can't use both author and editor fields in Gartner2003
+Warning--empty journal in Kang2012
+Warning--empty journal in Nakamoto2009
+You've used 31 entries,
+            2773 wiz_defined-function locations,
+            827 strings with 11233 characters,
+and the built_in function-call counts, 16294 in all, are:
+= -- 1493
+> -- 942
+< -- 26
++ -- 317
+- -- 286
+* -- 1328
+:= -- 2441
+add.period$ -- 108
+call.type$ -- 31
+change.case$ -- 187
+chr.to.int$ -- 31
+cite$ -- 65
+duplicate$ -- 762
+empty$ -- 1281
+format.name$ -- 329
+if$ -- 3498
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 29
+newline$ -- 170
+num.names$ -- 126
+pop$ -- 362
+preamble$ -- 1
+purify$ -- 157
+quote$ -- 0
+skip$ -- 610
+stack$ -- 0
+substring$ -- 629
+swap$ -- 153
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 336
+warning$ -- 3
+while$ -- 138
+width$ -- 0
+write$ -- 438
+(There were 3 warnings)
