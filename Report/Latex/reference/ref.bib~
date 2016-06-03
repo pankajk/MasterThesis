@@ -1,4 +1,15 @@
-﻿@inproceedings{Francesco2015,
+﻿@article{Shervashidze2011,
+ author = {Shervashidze, Nino and Schweitzer, Pascal and van Leeuwen, Erik Jan and Mehlhorn, Kurt and Borgwardt, Karsten M.},
+ title = {Weisfeiler-Lehman Graph Kernels},
+ journal = {J. Mach. Learn. Res.},
+ volume = {12},
+ month = nov,
+ year = {2011},
+ pages = {2539--2561}
+  
+} 
+
+@inproceedings{Francesco2015,
   author    = {Francesco Orsini and
                Paolo Frasconi and
                Luc De Raedt},
@@ -109,8 +120,16 @@ url = {http://papers.nips.cc/paper/5688-halting-in-random-walk-kernels.pdf}
  address = {Washington, DC, USA}
  
 } 
+@inproceedings{Feragen2013,
+  author = {Feragen, Aasa and Kasenburg, Niklas and Petersen, Jens and de Bruijne, Marleen and Borgwardt, Karsten M.},
+  booktitle = {NIPS},
+  pages = {216-224},
+  title = {Scalable kernels for graphs with continuous attributes.},
+  year = {2013}
+}
 
-﻿@article{Li2012,
+﻿
+@article{Li2012,
  author = {Li, Geng and Semerci, Murat and Yener,B{\"u}lent and Zaki, Mohammed J.},
  title = {Effective Graph Classification Based on Topological and Label Attributes},
  journal = {Stat. Anal. Data Min.},
@@ -324,6 +343,18 @@ url = {http://papers.nips.cc/paper/5688-halting-in-random-walk-kernels.pdf}
   month = {May},
   url = {http://www.bitcoin.org/bitcoin.pdf},
   year = {2009}
+}
+
+@article{ Kondor2014b,
+  author={Kondor, D{\'{a}}niel  and Csabai, Istv{\'{a}}n  and Sz{\"{u}}le, J{\'{a}}nos  and P{\'{o}}sfai, M{\'{a}}rton  and Vattay,  G{\'{a}}bor },
+  journal = {PLoS ONE},
+  publisher = {Public Library of Science},
+  title = {Do the Rich Get Richer? An Empirical Analysis of the Bitcoin Transaction Network},
+  year = {2014},
+  month = {02},
+  volume = {9},
+  pages = {1-10},
+  number = {2}
 }
 	
 

@@ -6,45 +6,45 @@ Database file #1: ./reference/ref.bib
 Warning--can't use both author and editor fields in Gartner2003
 Warning--empty journal in Kang2012
 Warning--empty journal in Nakamoto2009
-You've used 31 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            827 strings with 11233 characters,
-and the built_in function-call counts, 16294 in all, are:
-= -- 1493
-> -- 942
-< -- 26
-+ -- 317
-- -- 286
-* -- 1328
-:= -- 2441
-add.period$ -- 108
-call.type$ -- 31
-change.case$ -- 187
-chr.to.int$ -- 31
-cite$ -- 65
-duplicate$ -- 762
-empty$ -- 1281
-format.name$ -- 329
-if$ -- 3498
+            833 strings with 11425 characters,
+and the built_in function-call counts, 17006 in all, are:
+= -- 1554
+> -- 990
+< -- 27
++ -- 333
+- -- 301
+* -- 1385
+:= -- 2541
+add.period$ -- 111
+call.type$ -- 32
+change.case$ -- 195
+chr.to.int$ -- 32
+cite$ -- 67
+duplicate$ -- 795
+empty$ -- 1335
+format.name$ -- 345
+if$ -- 3657
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 170
-num.names$ -- 126
-pop$ -- 362
+missing$ -- 30
+newline$ -- 175
+num.names$ -- 130
+pop$ -- 381
 preamble$ -- 1
-purify$ -- 157
+purify$ -- 164
 quote$ -- 0
-skip$ -- 610
+skip$ -- 640
 stack$ -- 0
-substring$ -- 629
-swap$ -- 153
-text.length$ -- 15
+substring$ -- 659
+swap$ -- 164
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 336
+type$ -- 347
 warning$ -- 3
-while$ -- 138
+while$ -- 143
 width$ -- 0
-write$ -- 438
+write$ -- 451
 (There were 3 warnings)

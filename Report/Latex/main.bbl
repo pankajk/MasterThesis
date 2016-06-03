@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,6 +30,13 @@ Mukund Deshpande, Michihiro Kuramochi, Nikil Wale, and George Karypis.
   compounds.
 \newblock \emph{IEEE Trans. on Knowl. and Data Eng.}, 17\penalty0 (8):\penalty0
   1036--1050, August 2005.
+
+\bibitem[Feragen et~al.(2013)Feragen, Kasenburg, Petersen, de~Bruijne, and
+  Borgwardt]{Feragen2013}
+Aasa Feragen, Niklas Kasenburg, Jens Petersen, Marleen de~Bruijne, and
+  Karsten~M. Borgwardt.
+\newblock Scalable kernels for graphs with continuous attributes.
+\newblock In \emph{NIPS}, pages 216--224, 2013.
 
 \bibitem[Fleder et~al.(2015)Fleder, Kester, and Pillai]{Fleder2015}
 Michael Fleder, Michael~S. Kester, and Sudeep Pillai.

@@ -1,0 +1,444 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+
+%Math Operator
+
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\cm}[1]{\mathcal{#1}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\data}{\cm{D}}
+\newcommand{\given}{\mid}
+\newcommand{\enn}{\ensuremath{\varepsilon\text{-\textsc{nn}}}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand{\trans}{\ensuremath{^\top}}
+\DeclareMathOperator{\diag}{diag}
+
+
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{center}
+\vfill
+{ \huge \textbf{Deep Graph Kernels for Inferring Bitcoin Transaction Dynamics}}\\
+{ \LARGE \textbf{} }\\ % Comment this out if no subtitle and use \\[2.5cm] 
+			% after title. In case your title itself runs for three lines and you do not have 
+			% a subtitle, use \\[1.5cm] instead of \\[2.5cm]
+			
+\end{center}
+\setstretch{1.25}
+\begin{center}
+\textit{A Thesis Submitted in Partial Fulfilment of the Requirements for the Degree of}\\[1cm]
+\textmd{MASTER OF SCIENCE}\\
+IN\\
+\textmd{DATA ANALYTICS}\\
+\singlespacing
+\singlespacing
+\large{by}\\[0.5cm]
+\singlespacing
+\singlespacing
+\large\textbf{PANKAJ KUMAR}\\
+\large\textbf{(1410120079)}\\[2cm]
+\singlespacing
+\begin{center}
+\includegraphics[scale=1]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+\textmd{BIG DATA ANALYTICS CENTER}\\
+\singlespacing
+SCHOOL OF NATURAL SCIENCES\\
+\singlespacing
+\textmd{SHIV NADAR UNIVERSITY, GAUTAM BUDH NAGAR,}\\
+\singlespacing
+U.P., INDIA\\
+\singlespacing
+MAY, 2016\\
+
+\end{center}
+\end{center}
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	CERTIFICATE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\begin{center}
+\begin{center}
+\includegraphics[scale=0.8]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+\textmd{\textbf{BIG DATA ANALYTICS CENTER}}\\
+\singlespacing
+\textbf{SCHOOL OF NATURAL SCIENCES}\\
+\singlespacing
+\textmd{\textbf{SHIV NADAR UNIVERSITY, GAUTAM BUDH NAGAR},}\\
+\singlespacing
+\textbf{U.P., INDIA}\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\textbf{CERTIFICATE\\}
+\end{center}
+\end{center}
+This is to certify that the present work entitled, ``\textbf{Deep Graph Kernels for Inferring Bitcoin Transaction Dynamics}” submitted by \textbf{Pankaj Kumar} to the Big Data Analytics Center, Shiv Nadar University, in partial fulfilment of the requirements for the award of the degree of Master of Science is approved.
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{minipage}{.45\linewidth}
+\begin{flushleft}  
+......................................\\                         
+Dr. Sudeepto Bhattacharya \\
+Associate Professor \\
+Department of Mathematics\\
+Shiv Nadar University \\
+\vspace{12mm}
+......................................\\ 
+Dr. Anatoly Dymarsky \\
+Assistant Professor, \\
+Skoltech, Russian Federation \\
+\vspace{12mm}
+......................................\\ 
+Dr. Panagiotis Karras \\
+Assistant Professor \\
+Skoltech, Russian Federation \\
+\end{flushleft} 
+\end{minipage}
+\hfill
+\begin{minipage}{.45\linewidth}
+\begin{flushright}                                      
+
+.......................................\\
+Dr. Santosh Singh\\
+(Head, Big Data Analytics Center)\\
+Associate Professor\\
+Department of Mathematics\\
+Shiv Nadar University
+\end{flushright} 
+\end{minipage}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\begin{center}
+\begin{center}
+\includegraphics[scale=0.8]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+\textmd{\textbf{BIG DATA ANALYTICS CENTER}}\\
+\singlespacing
+\textbf{SCHOOL OF NATURAL SCIENCES}\\
+\singlespacing
+\textmd{\textbf{SHIV NADAR UNIVERSITY, GAUTAM BUDH NAGAR},}\\
+\singlespacing
+\textbf{U.P., INDIA}\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\textbf{DECLARATION\\}
+\end{center}
+\end{center}
+I hereby declare that the thesis titled, ``\textbf{Deep Graph Kernels for Inferring Bitcoin Transaction Dynamics}” being submitted to the Big Data Analytics Center, School of Natural Sciences, Shiv Nadar University, in partial fulfillment of the requirements for the award of the degree of Master of Sceience is a record of bonafide work carried out by me.\\
+
+The matter embodied in the thesis has not been submitted for the award of any degree in any university or institution.\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{minipage}{.45\linewidth}
+\begin{flushleft}                       
+MAY, 2016 \\
+Gautam Budh Nagar, Uttar Pradesh \\
+\end{flushleft} 
+\end{minipage}
+\hfill
+\begin{minipage}{.45\linewidth}
+\begin{flushright}                                      
+
+Pankaj Kumar\\
+(1410120079)\\
+\end{flushright} 
+\end{minipage}
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	Certification PAGE 1
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+%\input{Chapters/certi}
+
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	declaration PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+%\input{Chapters/dec}
+
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	Acknowledgement PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\input{Chapters/akn}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\input{Chapters/abstract}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+%\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+%\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+%\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+%{
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}%^{-\mbox{s}}$ (exact)\\
+% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+%\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+%{
+%$a$ & distance & m \\
+%$P$ & power & W (Js$^{-1}$) \\
+% Symbol & Name & Unit \\
+
+%& & \\ % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & rads$^{-1}$ \\
+% Symbol & Name & Unit \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER1
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1}
+%\input{Chapters/Chapter1} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER2
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter2}
+%\input{Chapters/Chapter2} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER3
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter3}
+%\input{Chapters/Chapter3} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER4
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter4}
+%\input{Chapters/Chapter4} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER5
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter5}
+%\input{Chapters/Chapter2} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER6
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter6}
+%\input{Chapters/Chapter2} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER6
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\addcontentsline{toc}{chapter}{Bibliography}
+\backmatter
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+
+%----------------------------------------------------------------------------------------
+\clearpage % Start a new page
+\input{Chapters/Bibliography}
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\addtocontents{toc}{\vspace{2em}}
+%\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document}  

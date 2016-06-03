@@ -2,7 +2,7 @@
 
 # Setting working dir
 getwd()
-setwd("/home/pankaj/MasterThesis")
+#setwd("/home/pankaj/MasterThesis")
 
 #remove all the variables from the workspace
 rm(list = ls())
@@ -12,7 +12,7 @@ library(reshape)
 
 
 # read data
-P=read.csv(file="./data/btc_usd/daily_price_march_april.csv",head=TRUE,sep=",")
+P=read.csv(file="2013_2015.csv",head=TRUE,sep=",")
 
 colnames(P) <- tolower(colnames(P))
 
@@ -58,10 +58,10 @@ par(mar = c(5,5,2,5))
 
 with(DF, plot(time, close, type="l", col="red3", 
              ylab="Price",
-             ylim=c(0,250)))
+             ylim=c(0,1300)))
 
 par(new = T)
-with(DF, plot(time, deep_sim_index, type="l", col= "blue", ylim=c(0, 0.1),axes=F, xlab=NA, ylab=NA, cex=1.2))
+with(DF, plot(time, deep_sim_index, type="l", col= "blue", ylim=c(0, 0.5),axes=F, xlab=NA, ylab=NA, cex=1.2))
 axis(side = 4)
 mtext(side = 4, line = 3, 'Deep Similarity Index')
 legend("topleft",

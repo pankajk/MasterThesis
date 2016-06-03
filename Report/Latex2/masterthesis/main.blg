@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+I found no \bibdata command---while reading file main.aux
+Warning--I didn't find a database entry for "Blockchain2016"
+Warning--I didn't find a database entry for "Donier2015"
+Warning--I didn't find a database entry for "Nakamoto2008"
+Warning--I didn't find a database entry for "Lo2015"
+Warning--I didn't find a database entry for "Kristoufek2015"
+Warning--I didn't find a database entry for "Kondor2014"
+Warning--I didn't find a database entry for "Ali2014"
+Warning--I didn't find a database entry for "Zager2008"
+Warning--I didn't find a database entry for "Yanardag2015"
+Warning--I didn't find a database entry for "Johannes2015"
+Warning--I didn't find a database entry for "Csabai2014"
+Warning--I didn't find a database entry for "Reid2013"
+Warning--I didn't find a database entry for "Ron2013"
+Warning--I didn't find a database entry for "Spagnuolo2013"
+Warning--I didn't find a database entry for "Fleder2015"
+Warning--I didn't find a database entry for "Babai2016"
+Warning--I didn't find a database entry for "Lee2015"
+Warning--I didn't find a database entry for "Gao2010"
+Warning--I didn't find a database entry for "Lerouge2016"
+Warning--I didn't find a database entry for "Koutra2015"
+Warning--I didn't find a database entry for "Li2012"
+Warning--I didn't find a database entry for "Mheich2015"
+Warning--I didn't find a database entry for "Melnik2002"
+Warning--I didn't find a database entry for "Haussler1999"
+Warning--I didn't find a database entry for "Aziz2013"
+Warning--I didn't find a database entry for "Vishwanathan2010"
+Warning--I didn't find a database entry for "Bai2015"
+Warning--I didn't find a database entry for "Gartner2003"
+Warning--I didn't find a database entry for "Borgwardt2005"
+Warning--I didn't find a database entry for "Kashima2003"
+Warning--I didn't find a database entry for "Mahe2004"
+Warning--I didn't find a database entry for "Sugiyama2015"
+Warning--I didn't find a database entry for "Kang2012"
+Warning--I didn't find a database entry for "Kriegel2005"
+Warning--I didn't find a database entry for "Martino2012"
+Warning--I didn't find a database entry for "Yanardag2015B"
+Warning--I didn't find a database entry for "Feragen2013"
+Warning--I didn't find a database entry for "Neumann2015"
+Warning--I didn't find a database entry for "Kondor2016"
+Warning--I didn't find a database entry for "Perozzi2014"
+Warning--I didn't find a database entry for "Kandola2003"
+Warning--I didn't find a database entry for "Milkov2013"
+You've used 0 entries,
+            2481 wiz_defined-function locations,
+            634 strings with 5270 characters,
+and the built_in function-call counts, 34 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 11
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 7
+(There was 1 error message)

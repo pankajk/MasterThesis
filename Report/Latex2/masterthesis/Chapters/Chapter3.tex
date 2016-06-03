@@ -1,0 +1,133 @@
+% Chapter 3
+\chapter{Graph Isomorphism} % Main chapter title
+
+\label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter3. \emph{Graph Isomorphism}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+The dramatic proliferation of sophisticated networks has resulted in a growing need for supporting effective analysis and measurement of large-scale graphs whose contents change dynamically over time or after
+an important event. The availability of large scale bitcoin's transactions allows us to have better understanding of the phenomena, modelled using underlying system of interacting agents. In short, It drives our research in direction to measures the structural change of a dynamic large-scale graph as well as the similarity between two graphs. At the core of above problem definition lies a common and critical graph isomorphism questions: By how much is a graph transformed over time or by a significant event? or how structurally similar are graphs?
+
+\section{Problem Definition}
+
+\subsection{Problem: Graph Similarity}
+
+Two graph $G_{1} = (V_{1},E_{1},\ell_{1})$ and $G_{2} = (V_{2},E_{2},\ell_{2})$ are isomorphic, denoted by $G_{1} \cong G_{2}$, if there is a structure-preserving bijection $f \colon V_{1} \rightarrow V_{2}$ so that if $ \{ e_{1}, e_{2} \} \in E_{1}$ then $ \{ f(e_{1}), f(e_{2}) \} \in E_{2}$.  where $V$ is the set of nodes and $E$ is the set of edges in graph $G$. Weighted adjacency matrices $A \in \mathbb{R}^{n_i \times n_i}$ represents and the label function~$\ell$ endows nodes with label and attribute information.
+
+\subsection{Solution: Similarity Index}
+
+Similarity Index, intuitively signifying the structural similarity between two given graphs is defined as $SI (G_{1}, G_{2})$,  $ 0 \leq SI(G_{1}, G_{2}) \leq 1 $. Where,  $SI (G_{1}, G_{2}) = 0 $ indicates that two graphs are structurally complementary and  $SI (G_{1}, G_{2}) = 1$ means two graphs are completely identical.
+
+
+
+\section{Literature Review}
+Long in the purview of researchers, graph isomorphism is a well-studied problem in literature. Besides its practical importance, the graph isomorphism problem is a curiosity in computational complexity theory as it is one of a very small number of problems belonging to NP neither known to be solvable in polynomial time nor NP-complete. The classic open problem in the algorithmic theory of random graphs for decades was recently solved by Babai \citep{Babai2016}. He showed that it can be solved in in quasipolynomial time. Unfortunately, an algorithm has not yet been created to test such algorithms, thus, it will have to be vetted by other experts in the field before it can be labeled as a success. 
+
+But, there are several approaches proposed to solve variations of the problem. The related work comprises five main areas: Subgraph Isomorphism, Graph Edit Distances, Topological Descriptors, Iterative Method and Polynomial Alternatives. We give the related work in each area separately, and by mentioning advantages/disadvantages, we try to justify how our chosen method out of them outweighs others.
+
+\subsection{Subgraph Isomorphism}
+
+Given the query graph $Q$ and a subgraph $G^{s}$ of $G$, an isomorphism between $Q$ and $G^{s}$ involves finding a bijective function  $f \colon V (Q) \rightarrow V (G^{s})$ such that for any two vertices $v_{1} \in V (Q)$ and $v_{1} \in V (Q)$, $(v_{1} , v_{2}) \in E(Q) \Rightarrow (f (v_{1} ), f (v_{2} )) \in E(G^{s})$.
+
+Subgraph Isomorphism is a fundamental problem in graph big data similarity analysis. Subgraph Isomorphism is an NP-complete problem. Adding to the same, most of the algorithms belonging to subgraph isomorphism are based on a backtracking method. The former computes the solutions by incrementally enumerating and verifying candidates for all vertices in a query graph. Also, excessive runtime in worst case may grow exponentially with the number of nodes. So, for larger graphs with many nodes and for large datasets of graphs, this is an enormous problem \citep{Lee2015}.
+
+With the above problem for the practitioners, we need polynomial-time similarity measure for graphs.
+\subsection{Graph Edit Distances}
+
+With evolving bitcoin transaction graph, where thousands of nodes keeps adding to the network everyday, the inexact graph similarity measure plays a crucial role. The inexact similarity measure consists on finding a distortion or variation between two input graphs, where there may not exist an exact match (two graphs are similar if its topology 
+and labeling is identical).
+
+The Inexact graph similarity has been one of the significant research foci in the area graph isomorphism. As an important way to measure the similarity between graphs, graph edit distance (GED) is the base of inexact graph similarity. The idea of graph edit distance is to define the dissimilarity of graphs by the amount of distortion that is needed to transform one graph into another. The transformation of the graphs involves assigning costs to different types of operations (edge/node insertion/deletion, modification of labels). Using the edit distance, an input graph to be classified can be analyzed by computing its dissimilarity to a number of training graphs \citep{Gao2010}. The GED is explained better using mathatically notations and definition below:
+
+\subsubsection{Problem Definition}
+Attributed graphs (as defined in Definition \ref{def:attributedgraph}) are powerful data structures for the representation of complex entities. To define GED, we first define attributed graph, a modification of earlier graph definition \ref{def:graph}: 
+
+\begin{definition}
+
+An attributed graph $G$ is a 4-tuple $G = (V,E,\ell_{v}, \ell_{e} )$, where :
+\begin{itemize}
+ \item $V$ is a set of vertices,
+ \item $E$ is a set of edges, such that $\forall e=(i,j)  \in E, i \in V \textrm{ and } j \in V$,
+ \item $\ell_{v} : V \rightarrow L_V$ is a vertex labeling function which associates the label $\ell_{v}(v)$ to all vertices $v$ of $V$,
+  where $L_V$ is the set of possible labels for the vertices,
+ \item $\ell_{e} : E \rightarrow L_E$ is an edge labeling function which associates the label $\ell_{e}(e)$ to all edges $e$ of $E$,
+  where $L_E$ is the set of possible labels for the edges.
+\end{itemize}
+\label{def:attributedgraph}
+\end{definition}
+
+The vertices label space ($L_V$) and respective edges label space ($L_E$) may be composed of any combination of numeric, continuous, symbolic or string attributes.
+
+With the graph definition \ref{def:attributedgraph}, which  allows us to handle arbitrarily structured graphs (directed or undirected, simple graphs or multigraphs) with unconstrained labeling functions, we define GED as the dissimilarity of two graphs by the minimum amount of distortion that is needed to transform one graph into another \citep{Lerouge2016}.
+
+\begin{definition}
+  The graph edit distance $d(.,.)$ is a function 
+  \begin{eqnarray*}
+    d & : & \mathcal{G} \times \mathcal{G} \rightarrow \mathbb{R}^+ \\
+    & & (G_1,G_2) \mapsto d(G_1,G_2) =\\
+    & & \min_{o=(o_1,\ldots,o_k)\in \Gamma(G_1,G_2)} \sum_{i=1}^kc(o_i) 
+  \end{eqnarray*}
+\end{definition}
+\noindent where $G_1=(V_1,E_1,\ell_{v1}, \ell_{e1} )$ and $G_2=(V_2,E_2, \ell_{v2}, \ell_{e2})$ are two graphs from the set $\mathcal{G}$ and $\Gamma(G_1,G_2)$ is the set of all edit paths $o=(o_1,\ldots,o_k)$ allowing to transform $G_1$ into $G_2$. An elementary edit operation $o_i$ is one of vertex substitution ($v_1 \rightarrow v_2$), edge substitution ($e_1 \rightarrow e_2$), vertex deletion ($v_1 \rightarrow \epsilon$), edge deletion: ($e_1 \rightarrow \epsilon$), vertex insertion ($ \epsilon \rightarrow v_2$) and edge insertion ($ \epsilon \rightarrow e_2$) with $v_1 \in V_1$, $v_2 \in V_2$, $e_1 \in E_1$ and $e_2 \in E_2$. $\epsilon$ is a dummy vertex or edge which is used to model insertion or deletion. $c(.)$ is a cost function on elementary edit operations $o_i$ that satisfies 
+\begin{itemize}
+\item $c(v_1 \rightarrow v_2) \leq c(v_1 \rightarrow v) + c(v \rightarrow v_2)$
+\item $c(e_1 \rightarrow e_2) \leq c(e_1 \rightarrow e) + c(e \rightarrow e_2)$
+\item $c(v_1 \rightarrow \epsilon) \leq c(v_1 \rightarrow v) + c(v \rightarrow \epsilon)$
+\item $c(e_1 \rightarrow \epsilon) \leq c(e_1 \rightarrow e) + c(e \rightarrow \epsilon)$
+\item $c(\epsilon \rightarrow v_2) \leq c(\epsilon \rightarrow v) + c(v \rightarrow v_2)$
+\item $c(\epsilon \rightarrow e_2) \leq c(\epsilon \rightarrow e) + c(e \rightarrow e_2)$
+\end{itemize}
+
+
+Moreover, in order to guarantee the symmetry property ($d(G_1,G_2)=d(G_2,G_1)$), the reverse edit path should result in the same cost. So, these costs have to be defined in a symmetric manner so that $c(v_1 \rightarrow v_2) = c(v_2 \rightarrow v_1)$, $c(e_1 \rightarrow e_2) = c(e_2 \rightarrow e_1) $, $c(v \rightarrow \epsilon) = c(\epsilon \rightarrow v)$ and $c(e \rightarrow \epsilon) = c(\epsilon \rightarrow e)$ \citep{Lerouge2016}.
+
+\subsubsection{Advantages} 
+The main advantages of algorithms based on GED and its extension is that, It captures partial similarities between graphs. It also allows for noise in the nodes, edges and their labels, which other other algorithms are incapable. One more advantage is that, It is flexible way of assigning costs to different operations \citep{Koutra2015}.
+
+\subsubsection{Disadvantages}
+Comparison of the similarity of corresponding nodes and edges in the computation of GED is still not solved well. For example, in attributed graphs, attributes of nodes and edges can be used for comparing the similarity. But the choice of  attributes and its available for computing distance remains an open problem \citep{Gao2010}. 
+
+The selection of the cost function for different edit operations is available for limited applications, or under some constrains, so
+some definitions of costs, which can be applied extensively and easily, are difficult to get.
+
+Some GED based algorithms contains subgraph isomorphism as one intermediate step bring out the problem of NP completeness and excessive runtime in worst case.
+
+\subsection{Topological Descriptors}
+
+Another approach on attacking graph isomorphism is based on features extraction, where each graph is mapped to a feature vector. Topological descriptors are based on a graph representation of the complex network, which includes number of edges, nodes, nodes degree, label distribution, paths, walk etc. The basic idea is to use topological descriptors and graph decompositions to define graph similarity measures using approaches, which derive feature spaces based on topological descriptors  and integrate topological decomposition into similarity measures. After that distances and metrics are used on vectors for learning on graphs.
+
+The $\lambda$-distance, a spectral method and levenshtein distance which defines the distance between two graphs as the distance between their spectra (eigenvalues) has been studied thoroughly \citep{Koutra2015}. The study by Li et al.\citep{Li2012} proposes an SVM-based approach on extracted features (average degree, eccentricity, number of nodes and edges, eigenvalues, clustering coefficient, diameter etc.) to perform graph isomorphism. Other techniques includes, computing edge curvatures under heat kernel embedding, comparing graph signatures consisting of
+summarized local structural features  and a distance based on graphlet correlation \citep{Koutra2015}.
+
+
+Going in the research direction of tracking changes in networks over time, spotting anomalies and detecting events, Lee et al.\citep{Lee2015} graph similarity approach is based on random walk with restart (RWR) algorithm with intergraph compression to transform representation of graph. The method is efficient in space requirement and produces results more quickly and accurately over conventional graph transformation schemes. The methods fails in picking Euclidean distance as measurement of matrix distance, as it become weakly discriminant when we have multidimensional and sparse data. Another work by Mheich et al. \citep{Mheich2015} on measure graph similarity takes account for vertices, edges and spatiality at the same time, which is unseen in literature.
+
+\subsubsection{Advantages}
+Representing of graph as topological descriptor has some great advantages. The graph mapping to feature vectors can be  Reused known, so act as efficient tools for feature vectors.
+
+\subsubsection{Disadvantages}
+
+Though these methods are powerful and scale well, but depending
+on the statistics that are chosen, it is possible to get results that are not intuitive. For example, it is possible to get high similarity between two graphs with very different node set size, which is not always desirable. Adding to the same, feature vector transformation leads to loss of topological information or includes subgraph isomorphism as
+one step.
+
+\subsection{Iterative Methods}
+
+Next approach is based on iterative methods, which is based on the concept to find the "best" correspondence between the nodes of the two graphs. The research direction attempting to solve the graph alignment problem is flooded with the methods span from genetic algorithms to decision trees, clustering, expectation-maximization, similarity flooding algorithm \citep{Melnik2002}, message-passing algorithm for aligning sparse networks and belief propagation \citep{Koutra2015}, to name few of them. The advantages of all enlisted methods are their speed and simplicity, but they do not take into account information about the graph structure. On graph similarly measure with given node correspondence, Koutra et al. \citep{Koutra2015} proposed DELTACON , a principled, intuitive, and scalable algorithm that assesses the similarity between two graphs on the same nodes using Fast Belief Propagation on real graphs from ENRON e-mail exchange and brain scans. The specific application to node correspondence make its unsuitable for dynamic graphs.
+
+\subsection{Polynomial Alternatives}
+
+Another important approach which work directly on the graphs without doing feature extraction is called graph kernels. It compare substructures of graphs that are computable in polynomial
+time. It characterize graph features in a high dimensional space and thus better preserve graph structures. Most of graph kernels are instances of the family of R-convolution kernels proposed by  Haussler \citep{Haussler1999}, which define graph kernels by comparing all pairs of isomorphic substructures under decomposition, and a new decomposition
+will result in a new graph kernel. It can be categorised into classes based on comparing all pairs of walks, paths, cycles \citep{Aziz2013}, trees and graphlets in polynomial time \citep{Vishwanathan2010}. We will do details review of graph kernels in the next chapter \ref{Chapter4}.
+
+\subsubsection{Drawback}
+The graph kernels arising from the R-convolution kernels neglect the relative locations of substructures. As a drawback, the R-convolution kernels cannot establish reliable structural correspondences between the
+substructures \citep{Bai2015}. The basic graph kernels also suffers from  prohibitively expensive runtime, $O(n_{6})$, tottering and halting problem, which keep swinging with recent research papers \citep{Vishwanathan2010}. 
+
+ \section{Summary}
+This chapter review the important studies in graph isomorphism problem under the relevant heading. With the evolving research, the research on graph kernels has gone high, but this chapter \ref{Chapte3} review the contemporary best graph isomorphism algorithms for analysis.
+%----------------------------------------------------------------------------------------
+
+

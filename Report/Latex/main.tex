@@ -23,6 +23,25 @@
 \restylefloat{table}
 \restylefloat{figure}
 
+%Math Operator
+
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\cm}[1]{\mathcal{#1}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\data}{\cm{D}}
+\newcommand{\given}{\mid}
+\newcommand{\enn}{\ensuremath{\varepsilon\text{-\textsc{nn}}}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand{\trans}{\ensuremath{^\top}}
+\DeclareMathOperator{\diag}{diag}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
 %Theorem, Lemma, etc. environments
 \newtheorem{theorem}{Theorem}%[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -199,7 +218,7 @@ such that $s_i$ has at least a specified number~$x$ of leading zeros where $x \s
 \subsection{Market \& Bitcoins}
 \label{subsec:Market and Bitcoins}
 
-Bitcoin started trading	 on Mt.	Gox, the largest online	 Bitcoin exchange at 5 cents. Over the next	 two	 years,	Bitcoin/USD exchange rose slowly, but in early April 2013, the price per bitcoin dropped from \$266 to around \$50 and then rose to around \$100. This major bubble was succeeded by another one on 29 Nov, 2013, when, the price of a bitcoin reached an all-time high of US\$1224.76 on 29 November 2013, then dropped into the \$200-\$300 range. Metaphorically, the price rise/drop is expressed as skippyball. Once skippyball pitched high in the air, the first bounce is big, then lower, and lower, until it is flat on the ground, ready for a new throw upward. Taking market price data from Blockchain the most popular Bitcoin wallet \footnote{Market Price in USD \url{https://blockchain.info/charts/market-price}}, the bubbles can be visualized in the time series plot \ref{fig:bubble} with circles representing bubbles.
+Bitcoin started trading	 on Mt.Gox (its market share was over 80\% on the BTC/USD spot market), the largest online Bitcoin exchange at 5 cents. Over the next	 two	 years,	BTC/USD exchange rose slowly, but in early April 2013, the price per BTC dropped from \$266 to around \$50 and then rose to around \$100. This major bubble was succeeded by another one on 29 Nov, 2013, when, the price of a bitcoin reached an all-time high of US\$1224.76 on 29 November 2013, then dropped into the \$200-\$300 range. Metaphorically, the price rise/drop is expressed as skippyball. Once skippyball pitched high in the air, the first bounce is big, then lower, and lower, until it is flat on the ground, ready for a new throw upward. Taking market price data from Blockchain, the most popular Bitcoin wallet \footnote{Market Price in USD \url{https://blockchain.info/charts/market-price}}, the bubbles can be visualized in the time series plot \ref{fig:bubble} with circles representing bubbles.
 
 \begin{figure}[ht]
 \begin{center}
@@ -264,9 +283,9 @@ The objective of thesis are following:
 
 \item Get daily transactions graphs. \textcolor{red}{complete}
 
-\item Given two graphs $G_1 (n_1 , e_1 )$ and $G_2 (n_2 , e_2 )$, find an algorithm to calculate the similarity index between the two graphs. \textcolor{red}{partially complete}.
+\item Given two graphs $G_1 (n_1 , e_1 )$ and $G_2 (n_2 , e_2 )$, find an algorithm to calculate the similarity index between the two graphs. \textcolor{red}{complete}.
 
-\item Given a graph time series, where there are $T$ number of graphs, find approximate subgraphs that occur in a subset of the $T$ graphs. \textcolor{red}{literature review complete}
+\item Given a graph time series, where there are $T$ number of graphs, find approximate subgraphs that occur in a subset of the $T$ graphs. \textcolor{red}{ partial complete}
 
 \end{enumerate}
 
@@ -315,7 +334,7 @@ Recent work on graph kernels tries to capture structural information encoded in 
 In the recent KDD 2015 paper by \citet{Yanardag2015}, the author used language modeling and deep learning to learn latent representations of sub-structures for graphs. Their framework leverages the dependency information between sub-structures by learning their latent representations. Using three popular graph kernels, namely Graphlet kernels, Weisfeiler-Lehman subtree kernels, and Shortest-Path graph kernels, their models proves to be improves the classification accuracy, robust to random noise and computationally efficient.
 
 
-\section{Network \& Price Correlation}
+\section{Network \& Price Correlation} \label{sec:NPC}
 
 The computationally efficient kernel methods requires kernel functions, an inner product of two vectors in a future space for all computations. In order to apply kernel methods to graph classification, we first need to define a kernel function between the graphs. Graph Kernels aim at computing similarity scores between graphs in a dataset, performed by using pattern derived out of  frequent subgraph mining. Patterns are used as features for graph comparison \citep{Deshpande2005}. Number of kernels taking account of positive semidefinite is proposed for structure data in various works, good summary of the same is enlisted in \citet{Vishwanathan2010}. The basic idea is based on decomposing an object into substructures and a feature vector, composed of the counts of the substructures. 
 
@@ -375,6 +394,19 @@ are similar to each other, and dissimilar to everything else. To alleviate this 
 K(G_{1}, G_{2}) = \Phi(G_{1})^{T} \mathcal{M} \Phi(G_{1})
 \end{equation}
 %
+
+
+%
+\begin{equation}
+
+\begin{split}\label{eq:SG} 
+
+\mathcal{L}_{SG} &= \sum_{i=1}^{|\mathcal{D}|} \sum_{i-K\le k \le i+K, k\ne i} - \log p(c_{k} | w_{i}) \\ &= \sum_{i=1}^{|\mathcal{D}|} \sum_{i-K\le k \le i+K, k\ne i} - \log \frac{e^{\mathbf{c}_{k}^{T}\mathbf{w}_{i}}}{\sum_{v=1}^{V_{c}} e^{\mathbf{c}_{v}^{T}\mathbf{w}_{i}}} \\ &= \sum_{i=1}^{|\mathcal{D}|} \sum_{i-K\le k \le i+K, k\ne i} - \mathbf{c}_{k}^{T}\mathbf{w}_{i} + \log \sum_{v=1}^{V_{c}} e^{\mathbf{c}_{v}^{T}\mathbf{w}_{i}} 
+
+\end{split}
+
+\end{equation}
+%
  
 where $\mathcal{M}$ represents a $|\mathcal{N}|\times |\mathcal{N}|$ positive semi-definite matrix that encodes the relationship between sub-structures and $\mathcal{N}$ represents the vocabulary of sub-structures obtained from the training data. Now, the important task is design $\mathcal{M}$, which can be computed by learning latent representations of sub-structures or by edit-distance relationship between sub-structures. 
 
@@ -391,6 +423,103 @@ where $i = $j and $1 \leq i \leq |\mathcal{V}|$ (resp. $j$). After computing the
 
 The conducted experiments with diverse real life data, confirms that deep kernels improves the classification accuracy, robust to random noise and computationally efficient.
 
+Most of the graph kernels \citep{Vishwanathan2010} are designed for unlabeled graphs or graphs with a complete set of discrete node labels
+, but graphs with continuous node attributes is catching up fast \citep{Feragen2013}. But these graph kernels can only handle graphs with complete label or attribute information in a principled manner. These may be efficient, but for specific graph and if flexible, computation is memory and/or time consuming. The propagation kernels by  \citet{Neumann2015} overcomes all the above problems. We exploit the propagation kernels in the deep framework to have similarity index between two graph. The propagation kernels measure the similarity between two graphs by comparing node label or attribute distributions after each step of an appropriate random walk.
+
+\subsection{Propagation Kernels}
+
+Taking the help of propagation kernels \citep{Neumann2015}, We define a kernel $K\colon \cm{X} \times \cm{X} \to \bb{R}$ 
+among graph instances $G^{(i)} \in \cm{X} $. The input space $\cm{X}$ comprises graphs $G^{(i)} = (V^{(i)},E^{(i)},\ell)$, where $V^{(i)}$ is the set of nodes and $E^{(i)}$ is the set of edges in graph $G^{(i)}$. Weighted adjacency matrices $A^{(i)} \in \bb{R}^{n_i \times n_i}$ represents and the label function~$\ell$ endows nodes with label and attribute information.
+The similarity between two graphs $G^{(i)}$ and $G^{(j)}$ is to computed by comparing all pairs of nodes in the above two:
+\begin{align}
+ K(G^{(i)}, G^{(j)}) =  \sum_{v \in G^{(i)}} \sum_{u \in G^{(j)}} k(u,v),  \notag
+\end{align}
+where $k(u,v)$ is an arbitrary node kernel determined by node labels
+and, if present, node attributes. It is defined in terms of the nodes' corresponding probability distributions $p_{t,u}$ and $p_{t,v}$, which we update and maintain throughout the process of information propagation.
+
+The kernel contribution of iteration $t$ is defined by
+\begin{align}
+ K(G^{(i)}_t, G^{(j)}_t) =  \sum_{v \in G^{(i)}_t} \sum_{u \in G^{(j)}_t} k(u,v).
+ \label{equ:kernel_contib}
+\end{align}
+The propagation kernels between labeled and attributed graphs are defined as:
+
+\begin{align}
+ k(u,v) = k_l(u,v) \cdot k_a(u,v),
+ \label{equ:node_kernel}
+\end{align}
+
+where $k_l(u,v)$ is a kernel corresponding to label information and
+$k_a(u,v)$ is a kernel corresponding to attribute information.  If no
+attributes are present, then $k(u,v) = k_l(u,v)$.  The
+$t_{\textsc{max}}$-iteration propagation kernel is now given by
+
+\begin{align}
+ K_{t_{\textsc{max}}}(G^{(i)}, G^{(j)}) = \sum_{t = 1}^{t_{\textsc{max}}} K(G^{(i)}_t, G^{(j)}_t).
+ \label{equ:pk_kernel}
+\end{align}
+
+
+If node kernel is defined in the form 
+
+\begin{align}
+  k(u,v) = \left\{
+  \begin{array}{l l}
+    1\;\; &  \text{if } condition\\
+    0\;\; &  \text{otherwise},
+  \end{array} \right.
+  \label{equ:dirac_kernel}
+\end{align}
+
+where $condition$ is an equality condition on the information of nodes
+$u$ and $v$, we can compute $K$ efficiently by \emph{binning} the node
+information, \emph{counting} the respective bin strengths for all
+graphs, and \emph{computing a base kernel} among these counts.  That
+is, we compute count features $\phi(G^{(i)}_t)$ for each graph and
+plug them into a base kernel: $\langle \cdot,\cdot \rangle$
+
+\begin{align}
+ K(G^{(i)}_t, G^{(j)}_t) = \langle\phi(G^{(i)}_t),\phi(G^{(j)}_t)\rangle.
+ \label{equ:feature_kernel}
+\end{align}
+ 
+ The above mathematical equations can be put in the form of algorithms \ref{algo:propKernel}.
+ 
+ \begin{algorithm}[t]
+  \caption{The general propagation kernel computation \citep{Neumann2015}.}
+  \begin{algorithmic}
+    \State \textbf{given:} graph database $\{G^{(i)}\}_i$, $\#$ iterations $t_{\textsc{max}}$, propagation scheme(s), base kernel $\langle \cdot, \cdot \rangle$
+    \State $K \gets 0$, $initialize\;\, distributions\;\, P_0^{(i)}$
+    \For{$t \gets 0\dotsc t_{\textsc{max}}$}
+    \ForAll{graphs $G^{(i)}$}
+    \ForAll{nodes $u \in G^{(i)}$}
+    \State $quantize\;\;p_{t,u}$, where $p_{t,u} \text{ is } u\text{-th row in }P^{(i)}_t$ 			\Comment{bin node information}
+    \EndFor
+    \State $compute\;\;  \Phi_{i \cdot} = \phi(G^{(i)}_t)$  \Comment{count bin strengths}
+    \EndFor
+    \State $K \gets K + \langle \Phi, \Phi\rangle $ 	\Comment{compute and add kernel contribution}
+    \ForAll{graphs $G^{(i)}$}
+    \State $P^{(i)}_{t+1} \gets P^{(i)}_{t}$ 				\Comment{propagate node information}
+    \EndFor
+    \EndFor
+  \end{algorithmic}
+  \label{algo:propKernel}
+\end{algorithm}
+
+\subsection{Experiments}
+We compare our framework with the representative instances of
+major families of graph kernels as discussed in \citet{Yanardag2015}. The similarity index is calculated as discussed in section \ref{sec:NPC}. The Matlab code of the propagation kernels was obtained from \citep{Neumann2015}, which was then coded in python. The correlation between transaction network structure and market price is depicted by figure \ref{fig:ds}. It shows better correlation with the network, as compared to similarity index calculated by other graph kernels without using deep framework. 
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=\textwidth]{./figure/ds.png}
+\caption{Deep Similarity}
+\label{fig:ds}
+\end{center}
+\end{figure}
+
+
+
 \section{Future Directions}
 \label{sec:con}
 
@@ -398,7 +527,7 @@ In this report, we find strong correlation between structural property (walk) of
 
 As we find strong correlations ($\rho =7.7$) above, the same experiments is expected to performed taking other robust graph kernels in particular shortest path, free from tottering and halting problems. We intend to use "propagation kernels" \citep{Neumann2015}, which can be used to construct kernels for many graph types, including labeled, partially labeled, unlabeled, directed, and attributed graphs, considering we have weighted dircted labled attributed graph. This makes easy to extend our work taking account of attributes to do price forecast in future. 
 
-Since, \citep{Yanardag2015} deep graph kernels outperforms popular graph kernels, we intent to use the same approach with modification in graph sampling and adding other graph kernels, especially propagation kernels \citep{Neumann2015}. We are also going to replicate the work in the paper with different datasets.
+Since, \citep{Yanardag2015} deep graph kernels outperforms popular graph kernels, we intent to use the same approach with modification in graph sampling and adding other graph kernels, especially propagation kernels \citep{Neumann2015}.The deep graph propagation kernels outperforms other graph kernels without deep framework, which can be seen in the figure \ref{fig:ds}.
 
 Though, we wanted to reproducing results from \citet{Kondor2014} studies, but that will depend on the time. But, we will  use \citet{Lee2015} graph similarity approach, based on random walk with restart (RWR) algorithm with intergraph compression to transform representation of graph for comparing it with graph kernels or its variant.
 

@@ -1,0 +1,40 @@
+% Chapter 6
+\chapter{Conclusion and Future Scope} % Main chapter title
+
+\label{Chapter6} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter6. \emph{Conclusion and Future Scope}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+\section{Conclusions}
+\begin{enumerate}
+
+\item The enormous blockchain (60 GB as of now) and the newer bitcoin clients indexing the full blockchain using LevelDB had made earlier public available software obsolete. The thesis develops an open source blockchain parsing tools to extract agent resolved data, which can be used to extend the stucked research in bitcoin transaction dynamics.
+
+\item The validation of the data parsed from our tool is then checked by
+reproducing the ”Mathew Effect” phenomenon from prominent paper using their original matlab code, but with our own data. The transaction dynamics in the bitcoin as money flow on the transaction network, support popular hypothesis in economics having roots in preferential attachment, called Matthew effect or the "rich get richer phenomenon".
+
+\item By using the agent resolved data, the case study of silk road arrest is illustrated with the transaction graph with details. It paves the way to understand the important events in bitcoin based on transaction.
+
+\item By defining quantitative measure of transformation over time, in terms of similarity index using different kernels, we infer that there is correspondence between network structure and exchange price in bitcoin. It also concludes that choice of graph kernels as per the graph structure plays important role on problem related to graph isomorphism. 
+
+\item We extend deep graph kernels \citep{Yanardag2015},
+involving propagation kernels, unseen in literature, to solve graph isomorphism problem, which gives extremely agreeable results.
+
+\item By defining quantitative measure of transformation over time, in terms of similarity index using different kernels, we infer that there is correspondence between network structure and exchange price in bitcoin, which is first step in price forecasting.
+
+\end{enumerate}
+
+\section{Future Work}
+
+\begin{enumerate}
+
+\item On transactions data front, the future work would be to transform the data set into a simplified one indexed by user entity rather than
+address to do some other meaningful studies, like identifying cluster, market player and linking events to predict bubbles.
+
+\item  The possible extension of our work would be to leverage on blockchain network features, as a basis to conduct deep learning learning
+prediction on the price change of Bitcoin.
+
+\end{enumerate}
+%----------------------------------------------------------------------------------------

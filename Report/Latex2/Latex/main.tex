@@ -1,0 +1,214 @@
+\documentclass[12pt,a4paper]{article}
+
+% Useful packages for article:
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{graphicx}
+\usepackage[round]{natbib}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{mathabx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{tabls,calc}
+\usepackage{float}
+\usepackage{parskip}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\floatstyle{ruled}
+\restylefloat{table}
+\restylefloat{figure}
+
+%Math Operator
+
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\cm}[1]{\mathcal{#1}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\data}{\cm{D}}
+\newcommand{\given}{\mid}
+\newcommand{\enn}{\ensuremath{\varepsilon\text{-\textsc{nn}}}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand{\trans}{\ensuremath{^\top}}
+\DeclareMathOperator{\diag}{diag}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%Theorem, Lemma, etc. environments
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{result}[theorem]{Result}
+
+\newcommand{\floatintro}[1]{
+
+  \vspace*{0.1in}
+
+  {\footnotesize
+
+    #1
+
+    }
+
+  \vspace*{0.1in}
+}
+\usepackage[pdftex, pdfusetitle, plainpages=false, 
+				letterpaper, bookmarks, bookmarksnumbered,
+				colorlinks, linkcolor=Sepia, filecolor=Blue, urlcolor=Blue, citecolor=Violet]
+				{hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Floats
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  \c@topnumber            : Number of floats allowed at the top of a column.
+\setcounter{topnumber}{8}
+%
+%  \topfraction            : Fraction of column that can be devoted to floats.
+\renewcommand\topfraction{1}
+%
+%  \c@bottomnumber, \bottomfraction : Same as above for bottom of page.
+\setcounter{bottomnumber}{3}
+\renewcommand\bottomfraction{.8}
+%
+%  \c@totalnumber          : Number of floats allowed in a single column,
+%                          including in-text floats.
+\setcounter{totalnumber}{8}
+%
+%  \textfraction         : Minimum fraction of column that must contain text.
+\renewcommand\textfraction{0}
+\renewcommand\floatpagefraction{.9}
+%
+%  \c@dbltopnumber, \dbltopfraction : Same as above, but for double-column
+%                          floats.
+\setcounter{dbltopnumber}{6}
+\renewcommand\dbltopfraction{1}
+\renewcommand\dblfloatpagefraction{.9}
+%
+\pretolerance=8000
+\tolerance=9500
+\hfuzz=0.5pt
+\vfuzz=2pt
+\hbadness=8000
+\vbadness=8000
+%\newcommand{\nohyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+
+\newsavebox\ruledbox
+\newlength \ruledlength
+\ruledlength\linewidth 
+\newcounter{box}
+\renewcommand \thebox{\@arabic\c@box}
+\def\fps@box{tbp}
+\def\ftype@box{1}
+\def\ext@box{lob}
+\def\boxname{Box}
+\def\fnum@box{\boxname~\thebox}
+\@ifundefined{color}{%
+\newenvironment{thinbox}
+ {\fboxsep6pt
+  \setlength\ruledlength{\linewidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@float{box}
+   \fbox{\usebox{\ruledbox}}
+  \end@float}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+% CVR's two-column box
+\newenvironment{widebox}
+ {\fboxsep6pt
+  \setlength\ruledlength{\textwidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@dblfloat{box}
+   \fbox{\usebox{\ruledbox}}
+  \end@dblfloat}
+}{%
+\definecolor{linecolor}{rgb}{0,0,.6}
+\definecolor{bgcolor}{rgb}{1,.894,.769}
+\newenvironment{thinbox}
+ {\fboxsep6pt%\fboxrule2pt
+  \setlength\ruledlength{\linewidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@float{box}
+   \fcolorbox{linecolor}{bgcolor}{\usebox{\ruledbox}}
+  \end@float}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+% CVR's two-column box
+\newenvironment{widebox}
+ {\fboxsep6pt\fboxrule1pt
+  \setlength\ruledlength{\textwidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@dblfloat{box}
+   \fcolorbox{linecolor}{bgcolor}{\usebox{\ruledbox}}
+  \end@dblfloat}
+}
+\makeatother
+  
+\title{Deep Graph Kernels for Inferring Bitcoin Transaction Dynamics \thanks{Report} }
+
+\author{Pankaj Kumar\thanks{Big Data Analytics Center, Shiv Nadar University, Gautam Buddha Nagar, India. Email: \url{kumar.x.pankaj@gmail.com}}} 
+
+
+\date{}
+
+\begin{document}
+\maketitle
+%\begin{abstract}
+%
+%\end{abstract}
+%\par
+%\noindent
+%\textbf{Keywords:} Agent Based Model $\cdot$ High Frequency Trading $\cdot$ Agent Ecology $\cdot$ Trading Strategies $\cdot$ CDA \\
+%\\
+%\textbf{JEL Classification:} G10 $\cdot$ C12
+%\newpage
+%\tableofcontents
+%\newpage
+
+There has been significant research done to analyze bitcoin transaction network, but very limited research has been executed to analyze the network’s influence on overall Bitcoin price, which is next step to forecast price. To achieve the former, one need to efficiently measures the structural change of a dynamic large-scale graph. With the above primary goal, this thesis contributes in area related to bitcoin transaction, a major input for graph isomorphisms problem. Graph isomorphism is then used to to give quantitative measure of large-scale graph (bitcoin transaction graph) transformation over time or by a significant event (bubbles).
+
+With the growing size of blockchain (65 GB), and recent bitcoin clients indexing the full blockchain using LevelDB have made the existing software tools obsolete to parse from the raw blockchain. On the data side, the thesis develops an open source blockchain parsing tools to extract agent resolved data by making significant changes in BitIodine, an open source tool developed by \citet{Spagnuolo2013}. Our tool parse postgres database dumps of the bitcoin-ruby-blockchain database generated by webbtc \footnote{\url{http://dumps.webbtc.com/bitcoin/}} to get transaction graph using R, which provides the flexibility at data management side.
+
+The validation of the data parsed from our tool is then checked by reproducing the "Mathew Effect" phenomenon from the \citet{Kondor2014b} paper's using their original matlab code, but with our own data.
+
+To capture correlation between network structure and market price, we extend the seminal work \citep{Yanardag2015} by Propagation kernel for fully labeled graphs \citep{Neumann2015}, which takes account of attributed graphs with continuous values to find qualitative measure of large scale transformation. The Matlab code of the propagation kernels was obtained from \citep{Neumann2015}, which was then coded in python. Our deep framework captures better correlation with the network, as compared to similarity index calculated by other traditional graph kernels. 
+
+We are able to show how structural changes in the network accompany significant changes (quantitative measure) in the exchange price of bitcoins. Thus giving foundation to possible extend of our work by  leveraging blockchain network features, as a basis to conduct deep learning learning prediction on the price change of Bitcoin.
+
+
+
+
+
+%\newpage
+\bibliographystyle{plainnat} 
+\bibliography{./reference/ref}
+
+\end{document}
+

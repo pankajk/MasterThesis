@@ -9,4 +9,6 @@
 \BOOKMARK [1][-]{section.4}{4 Graph Isomorphism}{}% 9
 \BOOKMARK [1][-]{section.5}{5 Network \046 Price Correlation}{}% 10
 \BOOKMARK [1][-]{section.6}{6 Deep Graph Kernel}{}% 11
-\BOOKMARK [1][-]{section.7}{7 Future Directions}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{6.1 Propagation Kernels}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{6.2 Experiments}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{7 Future Directions}{}% 14
